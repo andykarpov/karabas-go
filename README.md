@@ -10,7 +10,7 @@ A Spartan-6 based devboard to emulate different retro-computers.
 - 2x 2MB 10ns SRAM chips
 - 32MB SDRAM chip
 - VGA 8:8:8 output
-- On-board FP812 video processor
+- On-board FT812 video processor
 - 16-bit audio DAC
 - 2x Sega/Atari compatible DB9 joystick ports
 - CF card
@@ -30,7 +30,9 @@ The latest PCB revision number is Rev.B.
 
 - A boot core https://github.com/andykarpov/karabas-go-core-menu
 - A test core https://github.com/andykarpov/karabas-go-core-test
-- A TS-Conf core https://github.com/andykarpov/karabas-ho-core-tsconf
+- A TS-Conf core https://github.com/andykarpov/karabas-go-core-tsconf
+- A ZX Spectrum Next core https://github.com/andykarpov/karabas-go-core-next
+- A Karabas Pro core https://github.com/andykarpov/karabas-go-core-profi
 
 ### Pre-production renders:
 
