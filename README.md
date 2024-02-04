@@ -2,6 +2,12 @@
 
 A Spartan-6 based devboard to emulate different retro-computers.
 
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+The hardware design and documentation are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+FPGA cores and mcu firmware are licensed by their own licenses.
+
 ### What's on the board:
 
 - A 25k LE's Spartan-6 FPGA
