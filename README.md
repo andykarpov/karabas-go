@@ -6,7 +6,7 @@ A Spartan-6 based devboard to emulate different retro-computers.
 
 The hardware design and documentation are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-FPGA cores and mcu firmware are licensed by their own licenses.
+FPGA cores, the firmware and other software parts are licensed by their own licenses.
 
 ### What's on the board:
 
@@ -32,13 +32,23 @@ FPGA cores and mcu firmware are licensed by their own licenses.
 
 The latest PCB revision number is Rev.B.
 
+https://github.com/andykarpov/karabas-go-pcb
+
 ### Available cores
 
-- A boot core https://github.com/andykarpov/karabas-go-core-menu
-- A test core https://github.com/andykarpov/karabas-go-core-test
-- A TS-Conf core https://github.com/andykarpov/karabas-go-core-tsconf
-- A ZX Spectrum Next core https://github.com/andykarpov/karabas-go-core-next
-- A Karabas Pro core https://github.com/andykarpov/karabas-go-core-profi
+- https://github.com/andykarpov/karabas-go-core-menu
+- https://github.com/andykarpov/karabas-go-core-test
+- https://github.com/andykarpov/karabas-go-core-tsconf
+- https://github.com/andykarpov/karabas-go-core-next
+- https://github.com/andykarpov/karabas-go-core-profi
+
+### The Firmware
+
+- https://github.com/andykarpov/karabas-go-firmware
+
+### Dev Tools
+
+- https://github.com/andykarpov/karabas-go-tools
 
 ### Pre-production renders:
 
