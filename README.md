@@ -31,7 +31,7 @@ FPGA cores, the firmware and other software parts are licensed by their own lice
 
 ### PCB
 
-The latest PCB revision number is Rev.B1.
+The latest PCB revision number is Rev.B3.
 
 https://github.com/andykarpov/karabas-go-pcb
 
