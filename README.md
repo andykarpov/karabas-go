@@ -29,21 +29,20 @@ FPGA cores, the firmware and other software parts are licensed by their own lice
 - 1kB EEPROM
 - ESP8266 Wi-Fi module
 
-### PCB
+### PCB 
 
-The latest PCB revision number is Rev.B3.
+The latest PCB revision number is Rev.B4.
 
-https://github.com/andykarpov/karabas-go-pcb
+### FPGA Core Sources
 
-### Available cores
+- Boot Menu Core: https://github.com/andykarpov/karabas-go-core-menu
+- Test Core: https://github.com/andykarpov/karabas-go-core-test
+- TS-Conf Core: https://github.com/andykarpov/karabas-go-core-tsconf
+- ZX Spectrum Next Core: https://github.com/andykarpov/karabas-go-core-next
+- Karabas Pro Core: https://github.com/andykarpov/karabas-go-core-profi
+- PCXT Core: https://github.com/andykarpov/karabas-go-core-pcxt
 
-- https://github.com/andykarpov/karabas-go-core-menu
-- https://github.com/andykarpov/karabas-go-core-test
-- https://github.com/andykarpov/karabas-go-core-tsconf
-- https://github.com/andykarpov/karabas-go-core-next
-- https://github.com/andykarpov/karabas-go-core-profi
-
-### The Firmware
+### The Firmware Sources
 
 - https://github.com/andykarpov/karabas-go-firmware
 
