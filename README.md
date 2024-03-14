@@ -18,7 +18,7 @@ FPGA cores, the firmware and other software parts are licensed by their own lice
 - VGA 8:8:8 output
 - On-board FT812 video processor
 - 16-bit audio DAC
-- SAM9625 midi synth
+- SAM2695 midi synth
 - 2x Sega/Atari compatible DB9 joystick ports
 - CF card
 - 2x microSD cards
