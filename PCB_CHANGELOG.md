@@ -1,7 +1,6 @@
 ## Rev.B4
 
 - Moved CF card deeper
-- Moved USB-A connectors 1mm deeper
 - Textual fixes on the bottom silkscreen
 - Added THT RGB LEDs in parallel to the smd ones
 - Replaced FPC connector for external SD cards to a pin headers 1.27mm pitch
@@ -9,7 +8,9 @@
 ## Rev.B3
 
 - Cleanup
-- Added Op Amp to the sound output
+- Changed USB-A footprints
+- Moved USB-A connectors 1mm deeper
+- Moved USB-C and audio TRS connectors a bit out of the board
 
 ## Rev.B2
 
@@ -17,6 +18,7 @@
 - Added FPC connector for slim FDD
 - Added FT_PD ext reset, routed to MCU
 - Added midi chip
+- Added Op Amp to the sound output
 
 ## Rev.B1
 
