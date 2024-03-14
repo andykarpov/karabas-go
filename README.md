@@ -32,6 +32,7 @@ FPGA cores, the firmware and other software parts are licensed by their own lice
 ### PCB 
 
 The latest PCB revision number is Rev.B4.
+PCB Changelog: https://github.com/andykarpov/karabas-go/blob/master/PCB_CHANGELOG.md
 
 ### FPGA Core Sources
 
