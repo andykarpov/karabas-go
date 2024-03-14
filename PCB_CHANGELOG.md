@@ -9,6 +9,7 @@
 ## Rev.B3
 
 - Cleanup
+- Added Op Amp to the sound output
 
 ## Rev.B2
 
@@ -33,6 +34,7 @@
 - Bugfix revision
 - Changed incorrect FT buffers direction
 - Added missing power line to the RP2040
+- Fixed some values
 
 ## Rev.A
 
