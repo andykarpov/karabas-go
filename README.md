@@ -34,6 +34,8 @@ FPGA cores, the firmware and other software parts are licensed by their own lice
 The latest PCB revision number is Rev.B4.
 PCB Changelog: https://github.com/andykarpov/karabas-go/blob/master/PCB_CHANGELOG.md
 
+Warning: Rev.B4 could be a bit incompatible with the 3D enclosure models due to microSD cards shifted a bit forward.
+
 ### FPGA Core Sources
 
 - Boot Menu Core: https://github.com/andykarpov/karabas-go-core-menu
@@ -42,6 +44,7 @@ PCB Changelog: https://github.com/andykarpov/karabas-go/blob/master/PCB_CHANGELO
 - ZX Spectrum Next Core: https://github.com/andykarpov/karabas-go-core-next
 - Karabas Pro Core: https://github.com/andykarpov/karabas-go-core-profi
 - PCXT Core: https://github.com/andykarpov/karabas-go-core-pcxt
+- NES Core: https://github.com/andykarpov/karabas-go-core-nes
 
 ### The Firmware Sources
 
