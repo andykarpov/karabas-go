@@ -56,6 +56,10 @@ Warning: Rev.B4 could be a bit incompatible with the 3D enclosure models due to 
 
 - https://github.com/andykarpov/karabas-go-tools
 
+### PCB
+
+- https://github.com/andykarpov/karabas-go-pcb
+
 ### Pre-production renders:
 
 ![image](https://github.com/andykarpov/karabas-go/blob/master/docs/karabas-go-top.png?raw=true)
