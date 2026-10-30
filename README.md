@@ -45,6 +45,7 @@ Warning: Rev.B4 could be a bit incompatible with the 3D enclosure models due to 
 - Karabas Pro Core: https://github.com/andykarpov/karabas-go-core-profi
 - PCXT Core: https://github.com/andykarpov/karabas-go-core-pcxt
 - NES Core: https://github.com/andykarpov/karabas-go-core-nes
+- SNES Core: https://github.com/andykarpov/karabas-go-core-snes
 - Radio RK86 Core: https://github.com/andykarpov/karabas-go-core-rk86
 - Alf Core: https://github.com/andykarpov/karabas-go-core-alf
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
