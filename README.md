@@ -49,6 +49,7 @@ Warning: Rev.B4 could be a bit incompatible with the 3D enclosure models due to 
 - Radio RK86 Core: https://github.com/andykarpov/karabas-go-core-rk86
 - Alf Core: https://github.com/andykarpov/karabas-go-core-alf
 - MSX1 Core: https://github.com/andykarpov/karabas-go-core-msx
+- ZX Evolution BaseConf Core: https://github.com/andykarpov/karabas-go-core-baseconf
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
 
 ### The Firmware Sources
