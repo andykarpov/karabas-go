@@ -1,0 +1,49 @@
+# Copies the .kg of the core repos (cores.json) into cores/ when they change: one commit per
+# core, "<Core> build <build>: <the core commit> (<repo>@<sha>)". The core repos are public, so
+# no secret is needed; GITHUB_TOKEN commits here. Runs every hour and by hand (Actions > Sync
+# cores > Run workflow, optionally for one file). The firmware CI pushes here too: the push is
+# rebased and tried again.
+name: Sync cores
+
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "One file of cores.json (e.g. msx.kg); empty: all"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-cores
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy the changed cores
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 .github/scripts/sync_cores.py ${ONLY:+--only "$ONLY"}
+      - name: Push
+        if: always()
+        run: |
+          if [ "$(git rev-list --count origin/master..HEAD)" = 0 ]; then
+            echo "nothing to push"
+            exit 0
+          fi
+          for i in 1 2 3; do
+            git pull --rebase -q && git push && exit 0
+            sleep 10
+          done
+          exit 1

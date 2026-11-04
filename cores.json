@@ -1,0 +1,22 @@
+{
+    "_comment": "The cores that .github/workflows/sync-cores.yml copies into cores/: the .kg of a branch of a core repo. pong.kg has no repo and is not listed.",
+    "cores": [
+        {"file": "alf.kg",       "repo": "andykarpov/karabas-go-core-alf",        "branch": "master",  "path": "src/alf.kg"},
+        {"file": "alf128.kg",    "repo": "andykarpov/karabas-go-core-alf",        "branch": "alf-128", "path": "src/alf128.kg"},
+        {"file": "baseconf.kg",  "repo": "andykarpov/karabas-go-core-baseconf",   "branch": "master",  "path": "src/baseconf.kg"},
+        {"file": "boot.kg",      "repo": "andykarpov/karabas-go-core-menu",       "branch": "master",  "path": "src/boot.kg"},
+        {"file": "msx.kg",       "repo": "andykarpov/karabas-go-core-msx",        "branch": "master",  "path": "src/msx.kg"},
+        {"file": "nanomig.kg",   "repo": "andykarpov/karabas-go-core-nanomig",    "branch": "master",  "path": "src/nanomig.kg"},
+        {"file": "nes.kg",       "repo": "andykarpov/karabas-go-core-nes",        "branch": "master",  "path": "src/nes.kg"},
+        {"file": "next186.kg",   "repo": "andykarpov/karabas-go-core-next186",    "branch": "master",  "path": "src/next186.kg"},
+        {"file": "pcxt.kg",      "repo": "andykarpov/karabas-go-core-pcxt",       "branch": "main",    "path": "src/pcxt.kg"},
+        {"file": "profi.kg",     "repo": "andykarpov/karabas-go-core-profi",      "branch": "master",  "path": "src/profi.kg"},
+        {"file": "radio86rk.kg", "repo": "andykarpov/karabas-go-core-rk86",       "branch": "main",    "path": "src/radio86rk.kg"},
+        {"file": "sdrtest.kg",   "repo": "andykarpov/karabas-go-core-sdram-test", "branch": "master",  "path": "src/sdrtest.kg"},
+        {"file": "snes.kg",      "repo": "andykarpov/karabas-go-core-snes",       "branch": "master",  "path": "src/snes.kg"},
+        {"file": "spec256.kg",   "repo": "andykarpov/karabas-go-core-spec256",    "branch": "master",  "path": "src/spec256.kg"},
+        {"file": "test.kg",      "repo": "andykarpov/karabas-go-core-test",       "branch": "master",  "path": "src/test.kg"},
+        {"file": "tsconf.kg",    "repo": "andykarpov/karabas-go-core-tsconf",     "branch": "master",  "path": "src/tsconf.kg"},
+        {"file": "zxnext.kg",    "repo": "andykarpov/karabas-go-core-next",       "branch": "master",  "path": "src/zxnext.kg"}
+    ]
+}
