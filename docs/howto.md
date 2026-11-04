@@ -2,7 +2,7 @@
 
 How to prepare the newly created devboard to run:
 
-1. Prepare an SD card #1 with cores (*.kg, one file for all the boards) in the root of SD card. The SD card could be FAT16, FAT32 or EXFAT formatted.
+1. Prepare an SD card #1 with cores (*.kg from `cores/`, one file for all the boards: Karabas Go, Mini and Mini G) in the root of SD card. The SD card could be FAT16, FAT32 or EXFAT formatted.
 
 2. Upload the RP2040 firmware:
 

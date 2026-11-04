@@ -18,7 +18,7 @@ The release repo of the Karabas Go board (Xilinx Spartan-6 XC6SLX25, RP2040 MCU,
 ## Release
 
 - `firmware/firmware.uf2` is committed by the CI release job of `karabas-go-firmware` (`.github/workflows/build.yml`, the `SIBLING_REPOS_TOKEN` secret, commits "Firmware build <version>: ..." by github-actions[bot]). Never commit the firmware by hand. The job also removes `cores/karabas.ini`, `firmware/karabas.ini` and `firmware/drivers` if they appear: the firmware has the defaults.
-- Core files are copied in by hand after a core release: the `.kg` built and committed by the core repo replaces the one in `cores/`, and the same file goes to the sibling repo `karabas-mini` (`cores/`). Commit messages follow "<Core> build <date stamp>: <what changed>" (e.g. "Spec256 build 26102321: ..."). `pong.kg` (Go only) has no core repo: it was converted from the old `pong.kg1` (karabas-go-tools `kg1_to_json.py`).
+- Core files are copied in by hand after a core release: the `.kg` built and committed by the core repo replaces the one in `cores/`. This repo has the cores of all the boards (Go, Mini, Mini G); `karabas-mini` has no `cores/` and points here. Commit messages follow "<Core> build <date stamp>: <what changed>" (e.g. "Spec256 build 26102321: ..."). `pong.kg` (Go only) has no core repo: it was converted from the old `pong.kg1` (karabas-go-tools `kg1_to_json.py`).
 - The CI job pushes with `git pull --rebase`: pull before committing a core, the firmware may have moved on.
 - Commit only the files of the release. Do not commit untracked user files (local `karabas.ini`, drivers, test images).
 - Do not touch `case/`, `pcb/` and the PCB documents unless asked: they come from the hardware work, not from the cores or the firmware.
