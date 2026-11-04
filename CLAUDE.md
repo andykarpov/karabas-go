@@ -4,21 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-The release repo of the Karabas Go board (Xilinx Spartan-6 XC6SLX25, RP2040 MCU, FT812, VGA, floppy port): what goes onto the SD card and the board, plus the hardware documents. There is no source code and nothing to build here. The cores are built in their own repos (`karabas-go-core-*`, listed in `README.md`), the MCU firmware in `karabas-go-firmware`, the PCB sources in `karabas-go-pcb`. The hardware design and docs are CC BY-NC-SA 4.0 (`LICENSE`); cores and firmware have their own licenses.
+The release repo of the Karabas Go family: Karabas Go, Karabas Mini and Mini G (Xilinx Spartan-6 XC6SLX25, RP2040 MCU, FT812; Go: VGA, floppy port; Mini / Mini G: HDMI/DVI, ESP8266, an ESP32-S3 on the Mini G shield). What goes onto the SD card and the boards, plus the hardware documents of all the boards. There is no source code and nothing to build here. The cores are built in their own repos (`karabas-go-core-*`, listed in `README.md`), the MCU firmware in `karabas-go-firmware`, the PCB sources in `karabas-go-pcb` / `karabas-mini-pcb`. The hardware design and docs are CC BY-NC-SA 4.0 (`LICENSE`); cores and firmware have their own licenses. The former `karabas-mini` repo is archived (its README points here); its files were copied in without their history (2026-11-04).
 
 ## Layout
 
-- `cores/`: the core files `*.kg`, one per core (`boot.kg` is the boot menu). The cores are `.kg` files: one file for Go, Mini and Mini G (format kgo2, karabas-go-tools `docs/kgo2.md`); they need the firmware 26110415 or later (`firmware/`), an older firmware does not see them and stops with "Boot file not found". They go into the root of SD card 1 (FAT16, FAT32 or exFAT, `docs/howto.md`).
-- `firmware/firmware.uf2`: the RP2040 firmware, copied to the `RPI-RP2` drive in BOOTSEL.
-- `software/`: extra files for the cores (`TBBLUE.FW`, the ZX Next firmware).
-- `docs/`: `howto.md` (first start), the schematics (`karabas-go-rev*.pdf`) and interactive BOMs (`*-ibom.html`) of each PCB revision and of the Dream add-on, the renders used by `README.md`.
-- `pcb/`: the gerbers (`*-gerbers.zip`) of each revision, the add-on and the extender. `PCB_CHANGELOG.md`: the revisions (latest Rev.B4, Rev.C dev in progress).
-- `case/`: 3D enclosure models (STL and others) by several authors.
+- `cores/`: the core files `*.kg`, one per core with the bitstreams of all the boards (format kgo2, karabas-go-tools `docs/kgo2.md`; `boot.kg` is the boot menu). They need the firmware 26110415 or later, an older firmware does not see them and stops with "Boot file not found". They go into the root of SD card 1 (FAT16, FAT32 or exFAT, `docs/howto.md`).
+- `firmware/karabas_go.uf2`, `karabas_mini.uf2` (Mini rev.C .. F3), `karabas_minig.uf2` (Mini G rev.G / G2): the RP2040 firmware, copied to the `RPI-RP2` drive in BOOTSEL. `firmware/esp32-s3/`: the ESP32-S3 firmware of the Mini G shield (`flash.sh` / `flash.bat`, JP11 closed while flashing); `esp32-s3-old-zifi/` the older ZiFi build.
+- `software/`: extra files for the cores (`TBBLUE.FW` of ZX Next, `.WMF` plugins, `gopher_esp32.spg`).
+- `docs/howto.md` (first start, all boards); `docs/go/`, `docs/mini/`: schematics (`*-rev*.pdf`), interactive BOMs (`*-ibom.html`), the renders of `README.md`; `docs/mini/revF_mod.md`: the FT812 clock mod of Mini rev.C, D, F.
+- `pcb/go/`, `pcb/mini/`: gerbers (`*-gerbers.zip`) of each revision, add-on, extender and shield, each with its `PCB_CHANGELOG.md` (Go: Rev.B4, Rev.C dev; Mini: Rev.G stable, then G2).
+- `case/go/`, `case/mini/`: 3D enclosure models by several authors.
 
 ## Release
 
-- `firmware/firmware.uf2` is committed by the CI release job of `karabas-go-firmware` (`.github/workflows/build.yml`, the `SIBLING_REPOS_TOKEN` secret, commits "Firmware build <version>: ..." by github-actions[bot]). Never commit the firmware by hand. The job also removes `cores/karabas.ini`, `firmware/karabas.ini` and `firmware/drivers` if they appear: the firmware has the defaults.
-- Core files are copied in by hand after a core release: the `.kg` built and committed by the core repo replaces the one in `cores/`. This repo has the cores of all the boards (Go, Mini, Mini G); `karabas-mini` has no `cores/` and points here. Commit messages follow "<Core> build <date stamp>: <what changed>" (e.g. "Spec256 build 26102321: ..."). `pong.kg` (Go only) has no core repo: it was converted from the old `pong.kg1` (karabas-go-tools `kg1_to_json.py`).
+- `firmware/karabas_*.uf2` are committed by the CI release job of `karabas-go-firmware` (`.github/workflows/build.yml`, the `SIBLING_REPOS_TOKEN` secret, commits "Firmware build <version>: ..." by github-actions[bot]). Never commit them by hand. The job also removes `cores/karabas.ini`, `firmware/karabas.ini` and `firmware/drivers` if they appear: the firmware has the defaults. The ESP32-S3 files are not touched by the job.
+- Core files are copied in by hand after a core release: the `.kg` built and committed by the core repo replaces the one in `cores/`. Commit messages follow "<Core> build <date stamp>: <what changed>" (e.g. "Spec256 build 26102321: ..."). `pong.kg` (Go only) has no core repo: it was converted from the old `pong.kg1` (karabas-go-tools `kg1_to_json.py`).
 - The CI job pushes with `git pull --rebase`: pull before committing a core, the firmware may have moved on.
 - Commit only the files of the release. Do not commit untracked user files (local `karabas.ini`, drivers, test images).
 - Do not touch `case/`, `pcb/` and the PCB documents unless asked: they come from the hardware work, not from the cores or the firmware.
