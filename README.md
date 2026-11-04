@@ -1,6 +1,9 @@
-# Karabas-Go
+# Karabas Go, Mini, Mini G
 
-A Spartan-6 based devboard to emulate different retro-computers.
+Spartan-6 based devboards to emulate different retro-computers: Karabas Go and Karabas Mini /
+Mini G. This repository has what goes onto the SD card and the boards (the cores, the
+firmware), the hardware documents (schematics, BOMs, gerbers) and the 3D enclosures of all of
+them. (The Mini used to have its own repository, [karabas-mini](https://github.com/andykarpov/karabas-mini), archived now.)
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
@@ -8,7 +11,34 @@ The hardware design and documentation are licensed under [Creative Commons Attri
 
 FPGA cores, the firmware and other software parts are licensed by their own licenses.
 
-### What's on the board:
+## Getting started
+
+[docs/howto.md](docs/howto.md): the cores of `cores/` to the root of SD card #1 (one `.kg` file
+per core for every board), the firmware of the board from `firmware/`:
+
+| Board | Firmware |
+| --- | --- |
+| Karabas Go | `firmware/karabas_go.uf2` |
+| Karabas Mini, rev.C .. rev.F3 | `firmware/karabas_mini.uf2` |
+| Karabas Mini G, rev.G / G2 | `firmware/karabas_minig.uf2` |
+
+The `.kg` cores need the firmware 26110415 or later; an older firmware stops with "Boot file not
+found".
+
+## Layout
+
+| Path | What |
+| --- | --- |
+| `cores/` | the cores, `*.kg` (one file for all the boards) |
+| `firmware/` | the RP2040 firmware of each board; `esp32-s3/` the ESP32-S3 of the Mini G shield |
+| `software/` | extra files for the cores (`TBBLUE.FW` of ZX Next, plugins) |
+| `docs/go/`, `docs/mini/` | schematics (PDF), interactive BOMs, renders; `docs/mini/revF_mod.md` the FT812 clock mod of Mini rev.C, D, F |
+| `pcb/go/`, `pcb/mini/` | gerbers of each revision, `PCB_CHANGELOG.md` |
+| `case/go/`, `case/mini/` | 3D enclosure models |
+
+## The boards
+
+### Karabas Go
 
 - A 25k LE's Spartan-6 FPGA
 - RP2040 MCU
@@ -29,14 +59,56 @@ FPGA cores, the firmware and other software parts are licensed by their own lice
 - 1kB EEPROM
 - ESP8266 Wi-Fi module
 
-### PCB 
+The latest PCB revision is Rev.B4 ([changelog](pcb/go/PCB_CHANGELOG.md)). Rev.B4 could be a bit
+incompatible with the 3D enclosure models: its microSD cards are shifted a bit forward.
+PCB sources: [karabas-go-pcb](https://github.com/andykarpov/karabas-go-pcb).
 
-The latest PCB revision number is Rev.B4.
-PCB Changelog: https://github.com/andykarpov/karabas-go/blob/master/PCB_CHANGELOG.md
+![image](docs/go/karabas-go-top.png)
 
-Warning: Rev.B4 could be a bit incompatible with the 3D enclosure models due to microSD cards shifted a bit forward.
+![image](docs/go/karabas-go-bot.png)
 
-### FPGA Core Sources
+### Karabas Mini / Mini G
+
+- A 25k LE's Spartan-6 FPGA
+- RP2040 MCU
+- 4x USB Ports
+- 2x 2MB 10ns SRAM chips
+- 32MB SDRAM chip
+- DVI output
+- On-board FT812 video processor
+- SAM2695 midi synth
+- 2x microSD cards
+- Tape In/Out interface
+- DS3221 RTC
+- 1kB EEPROM
+- ESP8266 Wi-Fi module
+- uBUS expansion connector
+- ESP32-S3 as VDAC32 mcu
+- CF card
+
+The latest stable PCB revision is Rev.G ([changelog](pcb/mini/PCB_CHANGELOG.md)). Rev.C, D and F
+need a small [HW mod](docs/mini/revF_mod.md) for the cores that use the FT812.
+PCB sources: [karabas-mini-pcb](https://github.com/andykarpov/karabas-mini-pcb).
+
+![image](docs/mini/karabas-mini-top.png)
+
+![image](docs/mini/karabas-mini-bot.png)
+
+Shield with CF card and ESP32-S3 for rev.G (2nd floor):
+
+![image](docs/mini/karabas-mini-shield-v4-top.png)
+
+![image](docs/mini/karabas-mini-shield-v4-bot.png)
+
+Shield for the v4 shield with a dot matrix display (3rd floor):
+
+![image](docs/mini/karabas-mini-shield-v4-disp-top.png)
+
+![image](docs/mini/karabas-mini-shield-v4-disp-bot.png)
+
+## Sources
+
+FPGA cores:
 
 - Boot Menu Core: https://github.com/andykarpov/karabas-go-core-menu
 - Test Core: https://github.com/andykarpov/karabas-go-core-test
@@ -52,20 +124,6 @@ Warning: Rev.B4 could be a bit incompatible with the 3D enclosure models due to 
 - ZX Evolution BaseConf Core: https://github.com/andykarpov/karabas-go-core-baseconf
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
 
-### The Firmware Sources
+The firmware: https://github.com/andykarpov/karabas-go-firmware
 
-- https://github.com/andykarpov/karabas-go-firmware
-
-### Dev Tools
-
-- https://github.com/andykarpov/karabas-go-tools
-
-### PCB
-
-- https://github.com/andykarpov/karabas-go-pcb
-
-### Pre-production renders:
-
-![image](https://github.com/andykarpov/karabas-go/blob/master/docs/karabas-go-top.png?raw=true)
-
-![image](https://github.com/andykarpov/karabas-go/blob/master/docs/karabas-go-bot.png?raw=true)
+Dev tools (`make_core`): https://github.com/andykarpov/karabas-go-tools
