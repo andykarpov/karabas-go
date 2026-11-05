@@ -122,6 +122,7 @@ FPGA cores:
 - Alf Core: https://github.com/andykarpov/karabas-go-core-alf
 - MSX1 Core: https://github.com/andykarpov/karabas-go-core-msx
 - ZX Evolution BaseConf Core: https://github.com/andykarpov/karabas-go-core-baseconf
+- UKNC (MC-0511) Core: https://github.com/andykarpov/karabas-go-core-uknc
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware
