@@ -17,6 +17,7 @@
         {"file": "spec256.kg",   "repo": "andykarpov/karabas-go-core-spec256",    "branch": "master",  "path": "src/spec256.kg"},
         {"file": "test.kg",      "repo": "andykarpov/karabas-go-core-test",       "branch": "master",  "path": "src/test.kg"},
         {"file": "tsconf.kg",    "repo": "andykarpov/karabas-go-core-tsconf",     "branch": "master",  "path": "src/tsconf.kg"},
+        {"file": "uknc.kg",      "repo": "andykarpov/karabas-go-core-uknc",       "branch": "main",    "path": "src/uknc.kg"},
         {"file": "zxnext.kg",    "repo": "andykarpov/karabas-go-core-next",       "branch": "master",  "path": "src/zxnext.kg"}
     ]
 }
