@@ -9,6 +9,7 @@
         {"file": "nanomig.kg",   "repo": "andykarpov/karabas-go-core-nanomig",    "branch": "master",  "path": "src/nanomig.kg"},
         {"file": "nes.kg",       "repo": "andykarpov/karabas-go-core-nes",        "branch": "master",  "path": "src/nes.kg"},
         {"file": "next186.kg",   "repo": "andykarpov/karabas-go-core-next186",    "branch": "master",  "path": "src/next186.kg"},
+        {"file": "orion128.kg",  "repo": "andykarpov/karabas-go-core-orion128",   "branch": "master",  "path": "src/orion128.kg"},
         {"file": "pcxt.kg",      "repo": "andykarpov/karabas-go-core-pcxt",       "branch": "main",    "path": "src/pcxt.kg"},
         {"file": "profi.kg",     "repo": "andykarpov/karabas-go-core-profi",      "branch": "master",  "path": "src/profi.kg"},
         {"file": "radio86rk.kg", "repo": "andykarpov/karabas-go-core-rk86",       "branch": "main",    "path": "src/radio86rk.kg"},
