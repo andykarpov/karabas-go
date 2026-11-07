@@ -4,6 +4,7 @@
         {"file": "alf.kg",       "repo": "andykarpov/karabas-go-core-alf",        "branch": "master",  "path": "src/alf.kg"},
         {"file": "alf128.kg",    "repo": "andykarpov/karabas-go-core-alf",        "branch": "alf-128", "path": "src/alf128.kg"},
         {"file": "baseconf.kg",  "repo": "andykarpov/karabas-go-core-baseconf",   "branch": "master",  "path": "src/baseconf.kg"},
+        {"file": "bk.kg",        "repo": "andykarpov/karabas-go-core-bk",         "branch": "master",  "path": "src/bk.kg"},
         {"file": "boot.kg",      "repo": "andykarpov/karabas-go-core-menu",       "branch": "master",  "path": "src/boot.kg"},
         {"file": "msx.kg",       "repo": "andykarpov/karabas-go-core-msx",        "branch": "master",  "path": "src/msx.kg"},
         {"file": "nanomig.kg",   "repo": "andykarpov/karabas-go-core-nanomig",    "branch": "master",  "path": "src/nanomig.kg"},
