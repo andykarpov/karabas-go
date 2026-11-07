@@ -124,6 +124,7 @@ FPGA cores:
 - ZX Evolution BaseConf Core: https://github.com/andykarpov/karabas-go-core-baseconf
 - UKNC (MC-0511) Core: https://github.com/andykarpov/karabas-go-core-uknc
 - Orion-128 Core: https://github.com/andykarpov/karabas-go-core-orion128
+- BK-0011M + AZBK Core: https://github.com/andykarpov/karabas-go-core-bk
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware
