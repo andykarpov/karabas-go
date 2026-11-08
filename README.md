@@ -127,6 +127,7 @@ FPGA cores:
 - Orion-PRO Core: https://github.com/andykarpov/karabas-go-core-orionpro
 - Specialist / Specialist-MX Core: https://github.com/andykarpov/karabas-go-core-specialist
 - BK-0011M + AZBK Core: https://github.com/andykarpov/karabas-go-core-bk
+- Atari ST / STE Core: https://github.com/andykarpov/karabas-go-core-atarist
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware
