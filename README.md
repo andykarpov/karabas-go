@@ -118,7 +118,7 @@ FPGA cores:
 - PCXT Core: https://github.com/andykarpov/karabas-go-core-pcxt
 - NES Core: https://github.com/andykarpov/karabas-go-core-nes
 - SNES Core: https://github.com/andykarpov/karabas-go-core-snes
-- Radio RK86 Core: https://github.com/andykarpov/karabas-go-core-rk86
+- Radio-86RK family Core (RK86, Mikrosha, Apogey, Partner, Mikro-80): https://github.com/andykarpov/karabas-go-core-rk
 - Alf Core: https://github.com/andykarpov/karabas-go-core-alf
 - MSX1 Core: https://github.com/andykarpov/karabas-go-core-msx
 - ZX Evolution BaseConf Core: https://github.com/andykarpov/karabas-go-core-baseconf

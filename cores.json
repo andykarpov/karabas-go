@@ -15,7 +15,7 @@
         {"file": "specialist.kg",  "repo": "andykarpov/karabas-go-core-specialist",   "branch": "master",  "path": "src/specialist.kg"},
         {"file": "pcxt.kg",      "repo": "andykarpov/karabas-go-core-pcxt",       "branch": "main",    "path": "src/pcxt.kg"},
         {"file": "profi.kg",     "repo": "andykarpov/karabas-go-core-profi",      "branch": "master",  "path": "src/profi.kg"},
-        {"file": "radio86rk.kg", "repo": "andykarpov/karabas-go-core-rk86",       "branch": "main",    "path": "src/radio86rk.kg"},
+        {"file": "rk.kg",        "repo": "andykarpov/karabas-go-core-rk",         "branch": "master",  "path": "src/rk.kg"},
         {"file": "sdrtest.kg",   "repo": "andykarpov/karabas-go-core-sdram-test", "branch": "master",  "path": "src/sdrtest.kg"},
         {"file": "snes.kg",      "repo": "andykarpov/karabas-go-core-snes",       "branch": "master",  "path": "src/snes.kg"},
         {"file": "spec256.kg",   "repo": "andykarpov/karabas-go-core-spec256",    "branch": "master",  "path": "src/spec256.kg"},
