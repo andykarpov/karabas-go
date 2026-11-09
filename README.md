@@ -128,6 +128,7 @@ FPGA cores:
 - Specialist / Specialist-MX Core: https://github.com/andykarpov/karabas-go-core-specialist
 - BK-0011M + AZBK Core: https://github.com/andykarpov/karabas-go-core-bk
 - Atari ST / STE Core: https://github.com/andykarpov/karabas-go-core-atarist
+- Sinclair QL Core: https://github.com/andykarpov/karabas-go-core-ql
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware
