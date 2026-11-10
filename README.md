@@ -121,6 +121,7 @@ FPGA cores:
 - Radio-86RK family Core (RK86, Mikrosha, Apogey, Partner, Mikro-80): https://github.com/andykarpov/karabas-go-core-rk
 - Alf Core: https://github.com/andykarpov/karabas-go-core-alf
 - MSX1 Core: https://github.com/andykarpov/karabas-go-core-msx
+- MSX2 / MSX2+ Core: https://github.com/andykarpov/karabas-go-core-msx2
 - ZX Evolution BaseConf Core: https://github.com/andykarpov/karabas-go-core-baseconf
 - UKNC (MC-0511) Core: https://github.com/andykarpov/karabas-go-core-uknc
 - Orion-128 Core: https://github.com/andykarpov/karabas-go-core-orion128

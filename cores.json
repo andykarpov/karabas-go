@@ -8,6 +8,7 @@
         {"file": "bk.kg",        "repo": "andykarpov/karabas-go-core-bk",         "branch": "master",  "path": "src/bk.kg"},
         {"file": "boot.kg",      "repo": "andykarpov/karabas-go-core-menu",       "branch": "master",  "path": "src/boot.kg"},
         {"file": "msx.kg",       "repo": "andykarpov/karabas-go-core-msx",        "branch": "master",  "path": "src/msx.kg"},
+        {"file": "msx2.kg",      "repo": "andykarpov/karabas-go-core-msx2",       "branch": "master",  "path": "src/msx2.kg"},
         {"file": "nanomig.kg",   "repo": "andykarpov/karabas-go-core-nanomig",    "branch": "master",  "path": "src/nanomig.kg"},
         {"file": "nes.kg",       "repo": "andykarpov/karabas-go-core-nes",        "branch": "master",  "path": "src/nes.kg"},
         {"file": "next186.kg",   "repo": "andykarpov/karabas-go-core-next186",    "branch": "master",  "path": "src/next186.kg"},
