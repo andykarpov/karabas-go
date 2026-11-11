@@ -142,6 +142,7 @@ FPGA cores:
 - Commodore VIC-20 Core: https://github.com/andykarpov/karabas-go-core-vic20
 - Commodore 64 Core: https://github.com/xdemax/karabas-go-core-c64
 - Apple Macintosh Plus Core: https://github.com/andykarpov/karabas-go-core-macplus
+- Acorn Archimedes Core (RISC OS 3.11, needs your own ROM image): https://github.com/andykarpov/karabas-go-core-archie
 - Apple //e Core: https://github.com/andykarpov/karabas-go-core-apple2
 - Atari 2600 VCS Core: https://github.com/andykarpov/karabas-go-core-atari2600
 - V6Z80P+ (OSCA) Core: https://github.com/Caasper911/karabas-go-core-v6z80p
