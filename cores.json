@@ -25,6 +25,7 @@
         {"file": "test.kg",      "repo": "andykarpov/karabas-go-core-test",       "branch": "master",  "path": "src/test.kg"},
         {"file": "tsconf.kg",    "repo": "andykarpov/karabas-go-core-tsconf",     "branch": "master",  "path": "src/tsconf.kg"},
         {"file": "uknc.kg",      "repo": "andykarpov/karabas-go-core-uknc",       "branch": "main",    "path": "src/uknc.kg"},
+        {"file": "v6z80p.kg",    "repo": "Caasper911/karabas-go-core-v6z80p",     "branch": "master",  "path": "src/v6z80p.kg"},
         {"file": "zxnext.kg",    "repo": "andykarpov/karabas-go-core-next",       "branch": "master",  "path": "src/zxnext.kg"}
     ]
 }

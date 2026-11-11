@@ -131,6 +131,7 @@ FPGA cores:
 - Atari ST / STE Core: https://github.com/andykarpov/karabas-go-core-atarist
 - Sinclair QL Core: https://github.com/andykarpov/karabas-go-core-ql
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
+- V6Z80P+ (OSCA) Core: https://github.com/Caasper911/karabas-go-core-v6z80p
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware
 
