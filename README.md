@@ -1,5 +1,7 @@
 # Karabas Go, Mini, Mini G
 
+English | [Русский](README.ru.md)
+
 Spartan-6 based devboards to emulate different retro-computers: Karabas Go and Karabas Mini /
 Mini G. This repository has what goes onto the SD card and the boards (the cores, the
 firmware), the hardware documents (schematics, BOMs, gerbers) and the 3D enclosures of all of
