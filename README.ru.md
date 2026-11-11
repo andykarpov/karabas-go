@@ -141,7 +141,9 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Sinclair QL: https://github.com/andykarpov/karabas-go-core-ql
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
 - Commodore VIC-20: https://github.com/andykarpov/karabas-go-core-vic20
+- Commodore 64: https://github.com/xdemax/karabas-go-core-c64
 - Apple Macintosh Plus: https://github.com/andykarpov/karabas-go-core-macplus
+- Apple //e: https://github.com/andykarpov/karabas-go-core-apple2
 - Atari 2600 VCS: https://github.com/andykarpov/karabas-go-core-atari2600
 - V6Z80P+ (OSCA): https://github.com/Caasper911/karabas-go-core-v6z80p
 
