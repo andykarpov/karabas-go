@@ -132,6 +132,7 @@ FPGA cores:
 - Sinclair QL Core: https://github.com/andykarpov/karabas-go-core-ql
 - PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
 - Commodore VIC-20 Core: https://github.com/andykarpov/karabas-go-core-vic20
+- Apple Macintosh Plus Core: https://github.com/andykarpov/karabas-go-core-macplus
 - V6Z80P+ (OSCA) Core: https://github.com/Caasper911/karabas-go-core-v6z80p
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware

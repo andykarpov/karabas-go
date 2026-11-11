@@ -7,6 +7,7 @@
         {"file": "baseconf.kg",  "repo": "andykarpov/karabas-go-core-baseconf",   "branch": "master",  "path": "src/baseconf.kg"},
         {"file": "bk.kg",        "repo": "andykarpov/karabas-go-core-bk",         "branch": "master",  "path": "src/bk.kg"},
         {"file": "boot.kg",      "repo": "andykarpov/karabas-go-core-menu",       "branch": "master",  "path": "src/boot.kg"},
+        {"file": "macplus.kg",   "repo": "andykarpov/karabas-go-core-macplus",    "branch": "master",  "path": "src/macplus.kg"},
         {"file": "msx.kg",       "repo": "andykarpov/karabas-go-core-msx",        "branch": "master",  "path": "src/msx.kg"},
         {"file": "msx2.kg",      "repo": "andykarpov/karabas-go-core-msx2",       "branch": "master",  "path": "src/msx2.kg"},
         {"file": "nanomig.kg",   "repo": "andykarpov/karabas-go-core-nanomig",    "branch": "master",  "path": "src/nanomig.kg"},
