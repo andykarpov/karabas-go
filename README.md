@@ -25,6 +25,12 @@ per core for every board), the firmware of the board from `firmware/`:
 The `.kg` cores need the firmware 26110415 or later; an older firmware stops with "Boot file not
 found".
 
+[Karabas Flasher](https://github.com/xdemax/kgff) (kgff, by xdemax, MIT; Windows, Linux, macOS)
+does it in one window: it downloads the firmware and the cores of this repository, flashes the
+RP2040 firmware, replaces the `.kg` cores on SD card #1 (the old ones go to a backup folder),
+copies extra content (ROMs, disk images) and finds the board model by `AT+KARABAS=version`.
+Core updates need the firmware of 2026-10-18 or later: if unsure, update the firmware alone first.
+
 ## Layout
 
 | Path | What |
