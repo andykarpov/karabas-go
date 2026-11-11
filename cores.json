@@ -1,5 +1,5 @@
 {
-    "_comment": "The cores that .github/workflows/sync-cores.yml copies into cores/: the .kg of a branch of a core repo. pong.kg has no repo and is not listed.",
+    "_comment": "The cores that .github/workflows/sync-cores.yml copies into cores/: the .kg of a branch of a core repo. pong.kg has no repo and is not listed. \"release\": <asset> instead of branch / path = that asset of the latest release of the repo.",
     "cores": [
         {"file": "alf.kg",       "repo": "andykarpov/karabas-go-core-alf",        "branch": "master",  "path": "src/alf.kg"},
         {"file": "alf128.kg",    "repo": "andykarpov/karabas-go-core-alf",        "branch": "alf-128", "path": "src/alf128.kg"},
@@ -7,6 +7,7 @@
         {"file": "apple2.kg",    "repo": "andykarpov/karabas-go-core-apple2",     "branch": "master",  "path": "src/apple2.kg"},
         {"file": "atarist.kg",   "repo": "andykarpov/karabas-go-core-atarist",    "branch": "master",  "path": "src/atarist.kg"},
         {"file": "baseconf.kg",  "repo": "andykarpov/karabas-go-core-baseconf",   "branch": "master",  "path": "src/baseconf.kg"},
+        {"file": "c64.kg",       "repo": "xdemax/karabas-go-core-c64",            "release": "c64.kg"},
         {"file": "bk.kg",        "repo": "andykarpov/karabas-go-core-bk",         "branch": "master",  "path": "src/bk.kg"},
         {"file": "boot.kg",      "repo": "andykarpov/karabas-go-core-menu",       "branch": "master",  "path": "src/boot.kg"},
         {"file": "macplus.kg",   "repo": "andykarpov/karabas-go-core-macplus",    "branch": "master",  "path": "src/macplus.kg"},

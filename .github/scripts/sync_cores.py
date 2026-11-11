@@ -4,6 +4,8 @@
 # Only a file that is a valid kgo2 core (karabas-go-tools docs/kgo2.md) with the id of the one in
 # cores/ is taken. The core repos are public: no token is needed to read them (GITHUB_TOKEN, when
 # set, only raises the API rate limit).
+# A line of cores.json takes the file of a branch ("branch" + "path") or, with "release": <asset
+# name>, that asset of the latest GitHub release of the repo (for repos that do not commit the .kg).
 #
 # Usage: python3 .github/scripts/sync_cores.py [--only <file.kg>] [--dry-run]
 # Run from the root of the repo. Commits, does not push.
@@ -74,10 +76,20 @@ def main():
             sys.exit("%s is not in cores.json" % args.only)
     changed, errors = 0, 0
     for c in cores:
-        where = "%s@%s:%s" % (c["repo"], c["branch"], c["path"])
+        release = None
         try:
-            data = get("%s/%s/%s/%s" % (RAW, c["repo"], c["branch"], c["path"]), binary=True)
+            if "release" in c:
+                release = get("%s/repos/%s/releases/latest" % (API, c["repo"]))
+                where = "%s@%s:%s" % (c["repo"], release["tag_name"], c["release"])
+                asset = [a for a in release["assets"] if a["name"] == c["release"]]
+                if not asset:
+                    raise Exception("no asset %s in the release" % c["release"])
+                data = get(asset[0]["browser_download_url"], binary=True)
+            else:
+                where = "%s@%s:%s" % (c["repo"], c["branch"], c["path"])
+                data = get("%s/%s/%s/%s" % (RAW, c["repo"], c["branch"], c["path"]), binary=True)
         except Exception as e:
+            where = locals().get("where") or c["repo"]
             print("%s: %s: cannot download (%s)" % (c["file"], where, e))
             errors += 1
             continue
@@ -96,12 +108,16 @@ def main():
             print("%s: the core id changed (%s -> %s), skipped" % (c["file"], old_info["id"], info["id"]))
             errors += 1
             continue
-        commits = get("%s/repos/%s/commits?sha=%s&path=%s&per_page=1" % (API, c["repo"], c["branch"], c["path"]))
-        sha = commits[0]["sha"][:7] if commits else "?"
-        subject = commits[0]["commit"]["message"].splitlines()[0] if commits else ""
-        if subject.startswith("Merge pull request") and commits:
-            body = [l for l in commits[0]["commit"]["message"].splitlines()[1:] if l.strip()]
-            subject = body[0] if body else subject
+        if release:
+            sha = release["tag_name"]
+            subject = release["name"] or release["tag_name"]
+        else:
+            commits = get("%s/repos/%s/commits?sha=%s&path=%s&per_page=1" % (API, c["repo"], c["branch"], c["path"]))
+            sha = commits[0]["sha"][:7] if commits else "?"
+            subject = commits[0]["commit"]["message"].splitlines()[0] if commits else ""
+            if subject.startswith("Merge pull request") and commits:
+                body = [l for l in commits[0]["commit"]["message"].splitlines()[1:] if l.strip()]
+                subject = body[0] if body else subject
         msg = "%s build %s: %s (%s@%s)" % (info["name"] or info["id"], info["build"], subject, c["repo"].split("/")[-1], sha)
         print("%s: %s -> %s" % (c["file"], old_info["build"] if old_info else "new", info["build"]))
         if args.dry_run:
