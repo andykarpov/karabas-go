@@ -25,6 +25,7 @@
         {"file": "ql.kg",        "repo": "andykarpov/karabas-go-core-ql",         "branch": "master",  "path": "src/ql.kg"},
         {"file": "rk.kg",        "repo": "andykarpov/karabas-go-core-rk",         "branch": "master",  "path": "src/rk.kg"},
         {"file": "sdrtest.kg",   "repo": "andykarpov/karabas-go-core-sdram-test", "branch": "master",  "path": "src/sdrtest.kg"},
+        {"file": "sega.kg",      "repo": "andykarpov/karabas-go-core-sega",       "branch": "master",  "path": "src/sega.kg"},
         {"file": "snes.kg",      "repo": "andykarpov/karabas-go-core-snes",       "branch": "master",  "path": "src/snes.kg"},
         {"file": "spec256.kg",   "repo": "andykarpov/karabas-go-core-spec256",    "branch": "master",  "path": "src/spec256.kg"},
         {"file": "test.kg",      "repo": "andykarpov/karabas-go-core-test",       "branch": "master",  "path": "src/test.kg"},
