@@ -41,7 +41,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 | `cores/` | ядра, `*.kg` (один файл для всех плат) |
 | `firmware/` | прошивка RP2040 для каждой платы; `esp32-s3/` — прошивка ESP32-S3 шилда Mini G |
 | `software/` | дополнительные файлы для ядер (`TBBLUE.FW` для ZX Next, плагины) |
-| `docs/go/`, `docs/mini/` | схемы (PDF), интерактивные BOM, рендеры; `docs/mini/revF_mod.md` — доработка тактирования FT812 на Mini rev.C, D, F |
+| `docs/go/`, `docs/mini/` | схемы (PDF), интерактивные BOM, рендеры; `docs/mini/revF_mod.md` — доработка тактирования FT812 на Mini rev.C, D, F; `docs/mini/revG2_mod.md` — доработка ~CS SDRAM на rev.G2 |
 | `pcb/go/`, `pcb/mini/` | гербер-файлы каждой ревизии, `PCB_CHANGELOG.md` |
 | `case/go/`, `case/mini/` | 3D-модели корпусов |
 
@@ -96,7 +96,8 @@ Mini G. В этом репозитории лежит всё, что запис�
 - CF-карта
 
 Последняя стабильная ревизия платы — Rev.G ([список изменений](pcb/mini/PCB_CHANGELOG.md)).
-Ревизиям C, D и F для ядер, использующих FT812, нужна небольшая [доработка](docs/mini/revF_mod.md).
+Ревизиям C, D и F для ядер, использующих FT812, нужна небольшая [доработка](docs/mini/revF_mod.md). Ревизии G2 нужна
+[доработка ~CS SDRAM](docs/mini/revG2_mod.md), без неё не работает ни одно ядро, использующее SDRAM.
 Исходники платы: [karabas-mini-pcb](https://github.com/andykarpov/karabas-mini-pcb).
 
 ![image](docs/mini/karabas-mini-top.png)
