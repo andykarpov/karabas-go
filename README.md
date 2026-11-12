@@ -126,7 +126,7 @@ FPGA cores:
 - PCXT Core: https://github.com/andykarpov/karabas-go-core-pcxt
 - NES Core: https://github.com/andykarpov/karabas-go-core-nes
 - SNES Core: https://github.com/andykarpov/karabas-go-core-snes
-- Sega Mega Drive / Genesis Core (Mini G for now): https://github.com/andykarpov/karabas-go-core-sega
+- Sega Mega Drive / Genesis Core: https://github.com/andykarpov/karabas-go-core-sega
 - Radio-86RK family Core (RK86, Mikrosha, Apogey, Partner, Mikro-80): https://github.com/andykarpov/karabas-go-core-rk
 - Alf Core: https://github.com/andykarpov/karabas-go-core-alf
 - MSX1 Core: https://github.com/andykarpov/karabas-go-core-msx
