@@ -11,7 +11,7 @@ The release repo of the Karabas Go family: Karabas Go, Karabas Mini and Mini G (
 - `cores/`: the core files `*.kg`, one per core with the bitstreams of all the boards (format kgo2, karabas-go-tools `docs/kgo2.md`; `boot.kg` is the boot menu). They need the firmware 26110415 or later, an older firmware does not see them and stops with "Boot file not found". They go into the root of SD card 1 (FAT16, FAT32 or exFAT, `docs/howto.md`).
 - `firmware/karabas_go.uf2`, `karabas_mini.uf2` (Mini rev.C .. F3), `karabas_minig.uf2` (Mini G rev.G / G2): the RP2040 firmware, copied to the `RPI-RP2` drive in BOOTSEL. `firmware/esp32-s3/`: the ESP32-S3 firmware of the Mini G shield (`flash.sh` / `flash.bat`, JP11 closed while flashing); `esp32-s3-old-zifi/` the older ZiFi build.
 - `software/`: extra files for the cores (`TBBLUE.FW` of ZX Next, `.WMF` plugins, `gopher_esp32.spg`).
-- `docs/howto.md` (first start, all boards); `docs/go/`, `docs/mini/`: schematics (`*-rev*.pdf`), interactive BOMs (`*-ibom.html`), the renders of `README.md`; `docs/mini/revF_mod.md`: the FT812 clock mod of Mini rev.C, D, F.
+- `docs/howto.md` (first start, all boards); `docs/go/`, `docs/mini/`: schematics (`*-rev*.pdf`), interactive BOMs (`*-ibom.html`), the renders of `README.md`; `docs/mini/revF_mod.md`: the FT812 clock mod of Mini rev.C, D, F; `docs/mini/revG2_mod.md` (+ photo): the SDRAM ~CS mod of rev.G2.
 - `pcb/go/`, `pcb/mini/`: gerbers (`*-gerbers.zip`) of each revision, add-on, extender and shield, each with its `PCB_CHANGELOG.md` (Go: Rev.B4, Rev.C dev; Mini: Rev.G stable, then G2).
 - `case/go/`, `case/mini/`: 3D enclosure models by several authors.
 

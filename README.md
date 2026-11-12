@@ -40,7 +40,7 @@ Core updates need the firmware of 2026-10-18 or later: if unsure, update the fir
 | `cores/` | the cores, `*.kg` (one file for all the boards) |
 | `firmware/` | the RP2040 firmware of each board; `esp32-s3/` the ESP32-S3 of the Mini G shield |
 | `software/` | extra files for the cores (`TBBLUE.FW` of ZX Next, plugins) |
-| `docs/go/`, `docs/mini/` | schematics (PDF), interactive BOMs, renders; `docs/mini/revF_mod.md` the FT812 clock mod of Mini rev.C, D, F |
+| `docs/go/`, `docs/mini/` | schematics (PDF), interactive BOMs, renders; `docs/mini/revF_mod.md` the FT812 clock mod of Mini rev.C, D, F; `docs/mini/revG2_mod.md` the SDRAM ~CS mod of rev.G2 |
 | `pcb/go/`, `pcb/mini/` | gerbers of each revision, `PCB_CHANGELOG.md` |
 | `case/go/`, `case/mini/` | 3D enclosure models |
 
@@ -95,7 +95,8 @@ PCB sources: [karabas-go-pcb](https://github.com/andykarpov/karabas-go-pcb).
 - CF card
 
 The latest stable PCB revision is Rev.G ([changelog](pcb/mini/PCB_CHANGELOG.md)). Rev.C, D and F
-need a small [HW mod](docs/mini/revF_mod.md) for the cores that use the FT812.
+need a small [HW mod](docs/mini/revF_mod.md) for the cores that use the FT812. Rev.G2 needs the
+[SDRAM ~CS mod](docs/mini/revG2_mod.md), without it no core that uses the SDRAM works.
 PCB sources: [karabas-mini-pcb](https://github.com/andykarpov/karabas-mini-pcb).
 
 ![image](docs/mini/karabas-mini-top.png)

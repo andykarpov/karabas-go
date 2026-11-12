@@ -45,3 +45,8 @@ Read the manual of each core about what goes onto SD card #2.
 
 The cores that use the FT812 (boot, tsconf) need the hardware mod of
 [docs/mini/revF_mod.md](mini/revF_mod.md) on the Mini boards before rev.G.
+
+## Mini G rev.G2: the SDRAM ~CS mod
+
+On rev.G2 the SDRAM ~CS has to be tied to GND by hand, otherwise no core that uses the SDRAM works:
+[docs/mini/revG2_mod.md](mini/revG2_mod.md).
