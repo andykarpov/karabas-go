@@ -2,7 +2,6 @@
     "_comment": "The cores that .github/workflows/sync-cores.yml copies into cores/: the .kg of a branch of a core repo. pong.kg has no repo and is not listed. \"release\": <asset> instead of branch / path = that asset of the latest release of the repo.",
     "cores": [
         {"file": "alf.kg",       "repo": "andykarpov/karabas-go-core-alf",        "branch": "master",  "path": "src/alf.kg"},
-        {"file": "alf128.kg",    "repo": "andykarpov/karabas-go-core-alf",        "branch": "alf-128", "path": "src/alf128.kg"},
         {"file": "archie.kg",    "repo": "andykarpov/karabas-go-core-archie",     "branch": "master",  "path": "src/archie.kg"},
         {"file": "atari2600.kg", "repo": "andykarpov/karabas-go-core-atari2600",  "branch": "master",  "path": "src/atari2600.kg"},
         {"file": "apple2.kg",    "repo": "andykarpov/karabas-go-core-apple2",     "branch": "master",  "path": "src/apple2.kg"},
