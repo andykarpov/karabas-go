@@ -22,6 +22,7 @@
         {"file": "pcxt.kg",      "repo": "andykarpov/karabas-go-core-pcxt",       "branch": "main",    "path": "src/pcxt.kg"},
         {"file": "profi.kg",     "repo": "andykarpov/karabas-go-core-profi",      "branch": "master",  "path": "src/profi.kg"},
         {"file": "ql.kg",        "repo": "andykarpov/karabas-go-core-ql",         "branch": "master",  "path": "src/ql.kg"},
+        {"file": "quadspeccy.kg", "repo": "Caasper911/karabas-go-core-quadspeccy", "branch": "master",  "path": "src/quadspeccy.kg"},
         {"file": "rk.kg",        "repo": "andykarpov/karabas-go-core-rk",         "branch": "master",  "path": "src/rk.kg"},
         {"file": "sdrtest.kg",   "repo": "andykarpov/karabas-go-core-sdram-test", "branch": "master",  "path": "src/sdrtest.kg"},
         {"file": "sega.kg",      "repo": "andykarpov/karabas-go-core-sega",       "branch": "master",  "path": "src/sega.kg"},
