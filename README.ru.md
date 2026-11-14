@@ -147,6 +147,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Apple //e: https://github.com/andykarpov/karabas-go-core-apple2
 - Atari 2600 VCS: https://github.com/andykarpov/karabas-go-core-atari2600
 - V6Z80P+ (OSCA): https://github.com/Caasper911/karabas-go-core-v6z80p
+- QuadSpeccy (четыре Pentagon 128 на одном экране, в работе): https://github.com/Caasper911/karabas-go-core-quadspeccy
 
 Прошивка: https://github.com/andykarpov/karabas-go-firmware
 
