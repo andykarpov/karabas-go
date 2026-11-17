@@ -146,6 +146,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Apple Macintosh Plus: https://github.com/andykarpov/karabas-go-core-macplus
 - Apple //e: https://github.com/andykarpov/karabas-go-core-apple2
 - Atari 2600 VCS: https://github.com/andykarpov/karabas-go-core-atari2600
+- Atari 800XL: https://github.com/xdemax/karabas-go-core-atari800
 - V6Z80P+ (OSCA): https://github.com/Caasper911/karabas-go-core-v6z80p
 - QuadSpeccy (четыре Pentagon 128 на одном экране): https://github.com/Caasper911/karabas-go-core-quadspeccy
 
