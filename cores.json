@@ -35,6 +35,7 @@
         {"file": "uknc.kg",      "repo": "andykarpov/karabas-go-core-uknc",       "branch": "main",    "path": "src/uknc.kg"},
         {"file": "vic20.kg",     "repo": "andykarpov/karabas-go-core-vic20",      "branch": "master",  "path": "src/vic20.kg"},
         {"file": "v6z80p.kg",    "repo": "Caasper911/karabas-go-core-v6z80p",     "branch": "master",  "path": "src/v6z80p.kg"},
-        {"file": "zxnext.kg",    "repo": "andykarpov/karabas-go-core-next",       "branch": "master",  "path": "src/zxnext.kg"}
+        {"file": "zxnext.kg",    "repo": "andykarpov/karabas-go-core-next",       "branch": "master",  "path": "src/zxnext.kg"},
+        {"file": "zxuno.kg",     "repo": "andykarpov/karabas-go-core-zxuno",      "branch": "master",  "path": "src/zxuno.kg"}
     ]
 }
