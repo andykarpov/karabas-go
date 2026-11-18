@@ -125,6 +125,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - TS-Conf: https://github.com/andykarpov/karabas-go-core-tsconf
 - ZX Spectrum Next: https://github.com/andykarpov/karabas-go-core-next
 - Karabas Pro: https://github.com/andykarpov/karabas-go-core-profi
+- ZX-Uno (с General Sound и OPL3): https://github.com/andykarpov/karabas-go-core-zxuno
 - PCXT: https://github.com/andykarpov/karabas-go-core-pcxt
 - NES: https://github.com/andykarpov/karabas-go-core-nes
 - SNES: https://github.com/andykarpov/karabas-go-core-snes

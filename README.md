@@ -124,6 +124,7 @@ FPGA cores:
 - TS-Conf Core: https://github.com/andykarpov/karabas-go-core-tsconf
 - ZX Spectrum Next Core: https://github.com/andykarpov/karabas-go-core-next
 - Karabas Pro Core: https://github.com/andykarpov/karabas-go-core-profi
+- ZX-Uno Core (with General Sound and OPL3): https://github.com/andykarpov/karabas-go-core-zxuno
 - PCXT Core: https://github.com/andykarpov/karabas-go-core-pcxt
 - NES Core: https://github.com/andykarpov/karabas-go-core-nes
 - SNES Core: https://github.com/andykarpov/karabas-go-core-snes
