@@ -148,6 +148,7 @@ FPGA cores:
 - Apple //e Core: https://github.com/andykarpov/karabas-go-core-apple2
 - Atari 2600 VCS Core: https://github.com/andykarpov/karabas-go-core-atari2600
 - Atari 800XL Core: https://github.com/xdemax/karabas-go-core-atari800
+- Amstrad CPC 464 / 664 / 6128 Core: https://github.com/andykarpov/karabas-go-core-cpc
 - V6Z80P+ (OSCA) Core: https://github.com/Caasper911/karabas-go-core-v6z80p
 - QuadSpeccy Core (four Pentagon 128 on one screen): https://github.com/Caasper911/karabas-go-core-quadspeccy
 
