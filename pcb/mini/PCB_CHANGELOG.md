@@ -1,3 +1,8 @@
+## Rev.G3
+
+- Fixed SDRAM CS
+- Added a few more capacitors to SDRAM power pins
+
 ## Rev.G2
 
 - replaced UDA1334A with PCM5102A
