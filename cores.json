@@ -9,6 +9,7 @@
         {"file": "atarist.kg",   "repo": "andykarpov/karabas-go-core-atarist",    "branch": "master",  "path": "src/atarist.kg"},
         {"file": "baseconf.kg",  "repo": "andykarpov/karabas-go-core-baseconf",   "branch": "master",  "path": "src/baseconf.kg"},
         {"file": "c64.kg",       "repo": "xdemax/karabas-go-core-c64",            "release": "c64.kg"},
+        {"file": "bbc.kg",       "repo": "andykarpov/karabas-go-core-bbc",        "branch": "master",  "path": "src/bbc.kg"},
         {"file": "bk.kg",        "repo": "andykarpov/karabas-go-core-bk",         "branch": "master",  "path": "src/bk.kg"},
         {"file": "cpc.kg",       "repo": "andykarpov/karabas-go-core-cpc",        "branch": "master",  "path": "src/cpc.kg"},
         {"file": "boot.kg",      "repo": "andykarpov/karabas-go-core-menu",       "branch": "master",  "path": "src/boot.kg"},
