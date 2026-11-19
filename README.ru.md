@@ -150,6 +150,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Atari 800XL: https://github.com/xdemax/karabas-go-core-atari800
 - Amstrad CPC 464 / 664 / 6128: https://github.com/andykarpov/karabas-go-core-cpc
 - BBC Micro Model B / Master 128: https://github.com/andykarpov/karabas-go-core-bbc
+- Bandai WonderSwan / WonderSwan Color: https://github.com/andykarpov/karabas-go-core-wonderswan
 - V6Z80P+ (OSCA): https://github.com/Caasper911/karabas-go-core-v6z80p
 - QuadSpeccy (четыре Pentagon 128 на одном экране): https://github.com/Caasper911/karabas-go-core-quadspeccy
 
