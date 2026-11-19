@@ -24,6 +24,7 @@
         {"file": "orion128.kg",  "repo": "andykarpov/karabas-go-core-orion128",   "branch": "master",  "path": "src/orion128.kg"},
         {"file": "orionpro.kg",  "repo": "andykarpov/karabas-go-core-orionpro",   "branch": "master",  "path": "src/orionpro.kg"},
         {"file": "specialist.kg",  "repo": "andykarpov/karabas-go-core-specialist",   "branch": "master",  "path": "src/specialist.kg"},
+        {"file": "pdp2026.kg",   "repo": "andykarpov/karabas-go-core-pdp2026",    "branch": "main",    "path": "src/pdp2026.kg"},
         {"file": "pcxt.kg",      "repo": "andykarpov/karabas-go-core-pcxt",       "branch": "main",    "path": "src/pcxt.kg"},
         {"file": "profi.kg",     "repo": "andykarpov/karabas-go-core-profi",      "branch": "master",  "path": "src/profi.kg"},
         {"file": "ql.kg",        "repo": "andykarpov/karabas-go-core-ql",         "branch": "master",  "path": "src/ql.kg"},
