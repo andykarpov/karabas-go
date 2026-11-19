@@ -28,6 +28,7 @@
         {"file": "profi.kg",     "repo": "andykarpov/karabas-go-core-profi",      "branch": "master",  "path": "src/profi.kg"},
         {"file": "ql.kg",        "repo": "andykarpov/karabas-go-core-ql",         "branch": "master",  "path": "src/ql.kg"},
         {"file": "quadspeccy.kg", "repo": "Caasper911/karabas-go-core-quadspeccy", "branch": "master",  "path": "src/quadspeccy.kg"},
+        {"file": "quadspeccyx4.kg", "repo": "Caasper911/karabas-go-core-quadspeccyx4", "branch": "master",  "path": "src/quadspeccyx4.kg"},
         {"file": "rc2014.kg",    "repo": "andykarpov/karabas-go-core-rc2014",     "branch": "master",  "path": "src/rc2014.kg"},
         {"file": "rk.kg",        "repo": "andykarpov/karabas-go-core-rk",         "branch": "master",  "path": "src/rk.kg"},
         {"file": "sdrtest.kg",   "repo": "andykarpov/karabas-go-core-sdram-test", "branch": "master",  "path": "src/sdrtest.kg"},

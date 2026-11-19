@@ -157,6 +157,7 @@ FPGA cores:
 - RC2014 (Z80, RomWBW / CP/M, SCM, BASIC; VT100 terminal or TMS9918) Core: https://github.com/andykarpov/karabas-go-core-rc2014
 - V6Z80P+ (OSCA) Core: https://github.com/Caasper911/karabas-go-core-v6z80p
 - QuadSpeccy Core (four Pentagon 128 on one screen): https://github.com/Caasper911/karabas-go-core-quadspeccy
+- SpeccyWall / QuadSpeccyX4 Core (16 Pentagon 128 on one screen, a 4x4 wall at 1280x800): https://github.com/Caasper911/karabas-go-core-quadspeccyx4
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware
 
