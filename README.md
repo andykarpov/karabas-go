@@ -151,6 +151,7 @@ FPGA cores:
 - Atari 800XL Core: https://github.com/xdemax/karabas-go-core-atari800
 - Amstrad CPC 464 / 664 / 6128 Core: https://github.com/andykarpov/karabas-go-core-cpc
 - BBC Micro Model B / Master 128 Core: https://github.com/andykarpov/karabas-go-core-bbc
+- Bandai WonderSwan / WonderSwan Color Core: https://github.com/andykarpov/karabas-go-core-wonderswan
 - V6Z80P+ (OSCA) Core: https://github.com/Caasper911/karabas-go-core-v6z80p
 - QuadSpeccy Core (four Pentagon 128 on one screen): https://github.com/Caasper911/karabas-go-core-quadspeccy
 
