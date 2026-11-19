@@ -153,6 +153,7 @@ FPGA cores:
 - BBC Micro Model B / Master 128 Core: https://github.com/andykarpov/karabas-go-core-bbc
 - Bandai WonderSwan / WonderSwan Color Core: https://github.com/andykarpov/karabas-go-core-wonderswan
 - Agon Light / Console8 Core: https://github.com/andykarpov/karabas-go-core-agon
+- term (xterm-256color terminal: telnet / SSH over the ESP8266, USB serial) Core: https://github.com/andykarpov/karabas-go-core-term
 - V6Z80P+ (OSCA) Core: https://github.com/Caasper911/karabas-go-core-v6z80p
 - QuadSpeccy Core (four Pentagon 128 on one screen): https://github.com/Caasper911/karabas-go-core-quadspeccy
 
