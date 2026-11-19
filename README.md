@@ -154,6 +154,7 @@ FPGA cores:
 - Bandai WonderSwan / WonderSwan Color Core: https://github.com/andykarpov/karabas-go-core-wonderswan
 - Agon Light / Console8 Core: https://github.com/andykarpov/karabas-go-core-agon
 - term (xterm-256color terminal: telnet / SSH over the ESP8266, USB serial) Core: https://github.com/andykarpov/karabas-go-core-term
+- VT100 (terminal on the USB serial port of the board, a getty on the PC) Core: https://github.com/andykarpov/karabas-go-core-vt100
 - RC2014 (Z80, RomWBW / CP/M, SCM, BASIC; VT100 terminal or TMS9918) Core: https://github.com/andykarpov/karabas-go-core-rc2014
 - V6Z80P+ (OSCA) Core: https://github.com/Caasper911/karabas-go-core-v6z80p
 - QuadSpeccy Core (four Pentagon 128 on one screen): https://github.com/Caasper911/karabas-go-core-quadspeccy

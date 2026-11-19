@@ -153,6 +153,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Bandai WonderSwan / WonderSwan Color: https://github.com/andykarpov/karabas-go-core-wonderswan
 - Agon Light / Console8: https://github.com/andykarpov/karabas-go-core-agon
 - term (терминал xterm-256color: telnet / SSH через ESP8266, USB serial): https://github.com/andykarpov/karabas-go-core-term
+- VT100 (терминал на USB-последовательном порту платы, getty на ПК): https://github.com/andykarpov/karabas-go-core-vt100
 - RC2014 (Z80, RomWBW / CP/M, SCM, BASIC; терминал VT100 или TMS9918): https://github.com/andykarpov/karabas-go-core-rc2014
 - V6Z80P+ (OSCA): https://github.com/Caasper911/karabas-go-core-v6z80p
 - QuadSpeccy (четыре Pentagon 128 на одном экране): https://github.com/Caasper911/karabas-go-core-quadspeccy
