@@ -141,7 +141,7 @@ FPGA cores:
 - BK-0011M + AZBK Core: https://github.com/andykarpov/karabas-go-core-bk
 - Atari ST / STE Core: https://github.com/andykarpov/karabas-go-core-atarist
 - Sinclair QL Core: https://github.com/andykarpov/karabas-go-core-ql
-- PDP-11/70: https://github.com/tsybulin/karabas-go-core-pdp2026
+- PDP-11/70 Core (fork of tsybulin/karabas-go-core-pdp2026): https://github.com/andykarpov/karabas-go-core-pdp2026
 - Commodore VIC-20 Core: https://github.com/andykarpov/karabas-go-core-vic20
 - Commodore 64 Core: https://github.com/xdemax/karabas-go-core-c64
 - Apple Macintosh Plus Core: https://github.com/andykarpov/karabas-go-core-macplus
