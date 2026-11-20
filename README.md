@@ -184,6 +184,7 @@ FPGA cores:
 - V6Z80P+ (OSCA) Core: https://github.com/Caasper911/karabas-go-core-v6z80p
 - QuadSpeccy Core (four Pentagon 128 on one screen): https://github.com/Caasper911/karabas-go-core-quadspeccy
 - SpeccyWall / QuadSpeccyX4 Core (16 Pentagon 128 on one screen, a 4x4 wall at 1280x800): https://github.com/Caasper911/karabas-go-core-quadspeccyx4
+- Uzebox Core (ATmega644 game console; .uze games, SNES pads, SD card or SD image): https://github.com/Caasper911/karabas-go-core-uzebox
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware
 
