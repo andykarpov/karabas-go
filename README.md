@@ -159,6 +159,7 @@ FPGA cores:
 - MSX1 Core: https://github.com/andykarpov/karabas-go-core-msx
 - MSX2 / MSX2+ Core: https://github.com/andykarpov/karabas-go-core-msx2
 - ZX Evolution BaseConf Core: https://github.com/andykarpov/karabas-go-core-baseconf
+- Pentagon-4096 Core (4 MB, all its video modes and BIOS ports, GS, OPL4, Nemo IDE): https://github.com/andykarpov/karabas-go-core-p4096
 - UKNC (MC-0511) Core: https://github.com/andykarpov/karabas-go-core-uknc
 - Orion-128 Core: https://github.com/andykarpov/karabas-go-core-orion128
 - Orion-PRO Core: https://github.com/andykarpov/karabas-go-core-orionpro
