@@ -52,6 +52,10 @@ with these cores:
   of Bob Fossil (`.browse`, `BROWSE.BIN` 1.01) there is an updated `NMI.SYS` by its author:
   [software/esxdos/NMI.SYS](software/esxdos/NMI.SYS), copy it to `SYS` of SD card #2 (checked on
   Mini G with Profi and ZX-Uno);
+- the clock: [software/esxdos/RTC.SYS](software/esxdos/RTC.SYS) is the RTC.SYS of ZX Next (DS1307 on the
+  I2C ports 103B / 113B) moved to $2F00 for 0.9.0; copy it to `SYS` of SD card #2. It works with the
+  cores Karabas Pro (Profi) 26112103 and ZX-Uno 26112102 or later (they have these ports); with an older core `.date` gives an error, without `RTC.SYS` it says
+  "No SYS";
 - the ROM itself is in the `.kg` files: do not flash it with the `FLASHERS` tapes of the archive.
 
 ## Layout
@@ -60,7 +64,7 @@ with these cores:
 | --- | --- |
 | `cores/` | the cores, `*.kg` (one file for all the boards) |
 | `firmware/` | the RP2040 firmware of each board; `esp32-s3/` the ESP32-S3 of the Mini G shield |
-| `software/` | extra files for the cores (`TBBLUE.FW` of ZX Next, `esxdos/NMI.SYS` of the Bob Fossil browser, plugins) |
+| `software/` | extra files for the cores (`TBBLUE.FW` of ZX Next, `esxdos/NMI.SYS` of the Bob Fossil browser, `esxdos/RTC.SYS`, plugins) |
 | `docs/go/`, `docs/mini/` | schematics (PDF), interactive BOMs, renders; `docs/mini/revF_mod.md` the FT812 clock mod of Mini rev.C, D, F; `docs/mini/revG2_mod.md` the SDRAM ~CS mod of rev.G2 |
 | `pcb/go/`, `pcb/mini/` | gerbers of each revision, `PCB_CHANGELOG.md` |
 | `case/go/`, `case/mini/` | 3D enclosure models |
