@@ -183,6 +183,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - QuadSpeccy (четыре Pentagon 128 на одном экране): https://github.com/Caasper911/karabas-go-core-quadspeccy
 - SpeccyWall / QuadSpeccyX4 (16 Pentagon 128 на одном экране, стена 4x4 в 1280x800): https://github.com/Caasper911/karabas-go-core-quadspeccyx4
 - Uzebox (игровая консоль на ATmega644; игры .uze, SNES-джойстики, SD-карта или образ SD): https://github.com/Caasper911/karabas-go-core-uzebox
+- КРИСС CP/M (criss.radio.ru; сеть через ESP8266): https://github.com/andykarpov/karabas-go-core-criss
 
 Прошивка: https://github.com/andykarpov/karabas-go-firmware
 

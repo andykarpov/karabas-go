@@ -13,6 +13,7 @@
         {"file": "bbc.kg",       "repo": "andykarpov/karabas-go-core-bbc",        "branch": "master",  "path": "src/bbc.kg"},
         {"file": "bk.kg",        "repo": "andykarpov/karabas-go-core-bk",         "branch": "master",  "path": "src/bk.kg"},
         {"file": "cpc.kg",       "repo": "andykarpov/karabas-go-core-cpc",        "branch": "master",  "path": "src/cpc.kg"},
+        {"file": "criss.kg",     "repo": "andykarpov/karabas-go-core-criss",      "branch": "master",  "path": "src/criss.kg"},
         {"file": "doom.kg",      "repo": "andykarpov/karabas-go-core-doom",       "branch": "master",  "path": "src/doom.kg"},
         {"file": "boot.kg",      "repo": "andykarpov/karabas-go-core-menu",       "branch": "master",  "path": "src/boot.kg"},
         {"file": "macplus.kg",   "repo": "andykarpov/karabas-go-core-macplus",    "branch": "master",  "path": "src/macplus.kg"},
