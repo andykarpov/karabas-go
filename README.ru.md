@@ -48,7 +48,10 @@ Mini G. В этом репозитории лежит всё, что запис�
   из архива, переименовав его в `ESXMMC.BIN` (машинам Next с DivMMC нужна та же версия, что и
   в `SYS`);
 - `NMI.SYS` / `RTC.SYS`, сделанные для старых версий esxDOS, нужно пересобрать под новые адреса
-  ($2000 / $2F00);
+  ($2000 / $2F00). Для [Long Filename Browser](https://spectrumcomputing.co.uk/forums/viewtopic.php?f=9&t=2553)
+  от Bob Fossil (`.browse`, `BROWSE.BIN` 1.01) есть обновлённый `NMI.SYS` от автора:
+  [software/esxdos/NMI.SYS](software/esxdos/NMI.SYS), скопируйте его в `SYS` SD-карты 2 (проверено
+  на Mini G с Profi и ZX-Uno);
 - сама ПЗУ лежит в файлах `.kg`: прошивать её лентами `FLASHERS` из архива не нужно.
 
 ## Содержимое
@@ -57,7 +60,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 | --- | --- |
 | `cores/` | ядра, `*.kg` (один файл для всех плат) |
 | `firmware/` | прошивка RP2040 для каждой платы; `esp32-s3/` — прошивка ESP32-S3 шилда Mini G |
-| `software/` | дополнительные файлы для ядер (`TBBLUE.FW` для ZX Next, плагины) |
+| `software/` | дополнительные файлы для ядер (`TBBLUE.FW` для ZX Next, `esxdos/NMI.SYS` браузера Bob Fossil, плагины) |
 | `docs/go/`, `docs/mini/` | схемы (PDF), интерактивные BOM, рендеры; `docs/mini/revF_mod.md` — доработка тактирования FT812 на Mini rev.C, D, F; `docs/mini/revG2_mod.md` — доработка ~CS SDRAM на rev.G2 |
 | `pcb/go/`, `pcb/mini/` | гербер-файлы каждой ревизии, `PCB_CHANGELOG.md` |
 | `case/go/`, `case/mini/` | 3D-модели корпусов |

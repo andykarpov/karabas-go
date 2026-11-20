@@ -48,7 +48,10 @@ with these cores:
   of the archive, renamed to `ESXMMC.BIN` (the Next machines with DivMMC need the same version as
   `SYS`);
 - `NMI.SYS` / `RTC.SYS` made for older esxDOS versions must be rebuilt for the new addresses
-  ($2000 / $2F00);
+  ($2000 / $2F00). For the [Long Filename Browser](https://spectrumcomputing.co.uk/forums/viewtopic.php?f=9&t=2553)
+  of Bob Fossil (`.browse`, `BROWSE.BIN` 1.01) there is an updated `NMI.SYS` by its author:
+  [software/esxdos/NMI.SYS](software/esxdos/NMI.SYS), copy it to `SYS` of SD card #2 (checked on
+  Mini G with Profi and ZX-Uno);
 - the ROM itself is in the `.kg` files: do not flash it with the `FLASHERS` tapes of the archive.
 
 ## Layout
@@ -57,7 +60,7 @@ with these cores:
 | --- | --- |
 | `cores/` | the cores, `*.kg` (one file for all the boards) |
 | `firmware/` | the RP2040 firmware of each board; `esp32-s3/` the ESP32-S3 of the Mini G shield |
-| `software/` | extra files for the cores (`TBBLUE.FW` of ZX Next, plugins) |
+| `software/` | extra files for the cores (`TBBLUE.FW` of ZX Next, `esxdos/NMI.SYS` of the Bob Fossil browser, plugins) |
 | `docs/go/`, `docs/mini/` | schematics (PDF), interactive BOMs, renders; `docs/mini/revF_mod.md` the FT812 clock mod of Mini rev.C, D, F; `docs/mini/revG2_mod.md` the SDRAM ~CS mod of rev.G2 |
 | `pcb/go/`, `pcb/mini/` | gerbers of each revision, `PCB_CHANGELOG.md` |
 | `case/go/`, `case/mini/` | 3D enclosure models |
