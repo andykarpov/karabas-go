@@ -52,6 +52,10 @@ Mini G. В этом репозитории лежит всё, что запис�
   от Bob Fossil (`.browse`, `BROWSE.BIN` 1.01) есть обновлённый `NMI.SYS` от автора:
   [software/esxdos/NMI.SYS](software/esxdos/NMI.SYS), скопируйте его в `SYS` SD-карты 2 (проверено
   на Mini G с Profi и ZX-Uno);
+- часы: [software/esxdos/RTC.SYS](software/esxdos/RTC.SYS) — RTC.SYS от ZX Next (DS1307 на I2C-портах
+  103B / 113B), перенесённый на адрес $2F00 для 0.9.0; скопируйте его в `SYS` SD-карты 2. Работает с
+  ядрами Karabas Pro (Profi) 26112103 / ZX-Uno 26112102 и новее (в них есть эти порты); со старым
+  ядром `.date` выдаёт ошибку, без `RTC.SYS` — «No SYS»;
 - сама ПЗУ лежит в файлах `.kg`: прошивать её лентами `FLASHERS` из архива не нужно.
 
 ## Содержимое
@@ -60,7 +64,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 | --- | --- |
 | `cores/` | ядра, `*.kg` (один файл для всех плат) |
 | `firmware/` | прошивка RP2040 для каждой платы; `esp32-s3/` — прошивка ESP32-S3 шилда Mini G |
-| `software/` | дополнительные файлы для ядер (`TBBLUE.FW` для ZX Next, `esxdos/NMI.SYS` браузера Bob Fossil, плагины) |
+| `software/` | дополнительные файлы для ядер (`TBBLUE.FW` для ZX Next, `esxdos/NMI.SYS` браузера Bob Fossil, `esxdos/RTC.SYS`, плагины) |
 | `docs/go/`, `docs/mini/` | схемы (PDF), интерактивные BOM, рендеры; `docs/mini/revF_mod.md` — доработка тактирования FT812 на Mini rev.C, D, F; `docs/mini/revG2_mod.md` — доработка ~CS SDRAM на rev.G2 |
 | `pcb/go/`, `pcb/mini/` | гербер-файлы каждой ревизии, `PCB_CHANGELOG.md` |
 | `case/go/`, `case/mini/` | 3D-модели корпусов |
