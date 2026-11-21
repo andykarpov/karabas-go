@@ -160,6 +160,7 @@ FPGA cores:
 - MSX2 / MSX2+ Core: https://github.com/andykarpov/karabas-go-core-msx2
 - ZX Evolution BaseConf Core: https://github.com/andykarpov/karabas-go-core-baseconf
 - Pentagon-4096 Core (4 MB, all its video modes and BIOS ports, GS, OPL4, Nemo IDE): https://github.com/andykarpov/karabas-go-core-p4096
+- PetersPlus Sprinter Sp2000 Core (BIOS 3.06, Estex DSS from HDD / floppy images, ACEX configurations incl. Thunder in the Deep): https://github.com/andykarpov/karabas-go-core-sprinter
 - UKNC (MC-0511) Core: https://github.com/andykarpov/karabas-go-core-uknc
 - Orion-128 Core: https://github.com/andykarpov/karabas-go-core-orion128
 - Orion-PRO Core: https://github.com/andykarpov/karabas-go-core-orionpro
