@@ -188,6 +188,7 @@ FPGA cores:
 - Uzebox Core (ATmega644 game console; .uze games, SNES pads, SD card or SD image): https://github.com/Caasper911/karabas-go-core-uzebox
 - CRISS CP/M Core (criss.radio.ru; network over the ESP8266): https://github.com/andykarpov/karabas-go-core-criss
 - Gigatron TTL Core (the TTL microcomputer of Marcel van Kervinck and Walter Belgers; .gt1 programs from the SD card): https://github.com/andykarpov/karabas-go-core-gigatron
+- Vector-06C Core (Вектор-06Ц: 3 MHz with the exact wait states, RAM disk, floppy .fdd, AY, tape .wav; 576p of the original frame): https://github.com/andykarpov/karabas-go-core-vector06c
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware
 
