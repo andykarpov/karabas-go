@@ -185,6 +185,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Uzebox (игровая консоль на ATmega644; игры .uze, SNES-джойстики, SD-карта или образ SD): https://github.com/Caasper911/karabas-go-core-uzebox
 - КРИСС CP/M (criss.radio.ru; сеть через ESP8266): https://github.com/andykarpov/karabas-go-core-criss
 - Gigatron TTL (TTL-микрокомпьютер Марселя ван Кервинка и Вальтера Белгерса; программы .gt1 с SD-карты): https://github.com/andykarpov/karabas-go-core-gigatron
+- Вектор-06Ц (3 МГц с точными тактами ожидания, квазидиск, дискеты .fdd, AY, лента .wav; 576p с кадром оригинала): https://github.com/andykarpov/karabas-go-core-vector06c
 
 Прошивка: https://github.com/andykarpov/karabas-go-firmware
 
