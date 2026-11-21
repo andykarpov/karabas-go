@@ -41,6 +41,26 @@ Read the manual of each core about what goes onto SD card #2.
 - Edit the COM port in `flash.bat` (or `flash.sh`) and run it
 - After a successful flash, remove the JP11 jumper, disconnect both USB-C cables
 
+The firmware in `firmware/esp32-s3/` (2026-11-21) is ZiFi32 of tslabs/zx-evo `master` plus the fixes
+of [andykarpov/zx-evo `karabas/esp32-fixes`](https://github.com/andykarpov/zx-evo/tree/karabas/esp32-fixes)
+(upstream PR [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94)). They fix:
+
+- the ESP no longer answering until a power cycle after Gopher or stream commands;
+- leaks;
+- stalled downloads;
+- Wi-Fi connects that never got an IP.
+
+Before flashing it over an older build:
+
+- The partition table changed: `fat` 7 MB, `tsf` 5 MB and `oplrom` 2 MB, where the older one had
+  `spiffs` and an 8 MB `fat`. What the older `fat` / `spiffs` held is lost. Save the whole flash first
+  if needed: `esptool --chip esp32s3 -p <port> read-flash 0 0x1000000 backup.bin`.
+- The player commands of the ESP changed (XM / MOD / S3M). Take the matching files from `software/`:
+  - `FTVIEW.WMF`: the Wild Commander plugin that plays XM; goes into the `WC` folder.
+  - `gopher_esp32.spg`: the Gopher browser, a binary patch of its 2026-04-27 build (the author has
+    not published the sources). Patched: the new player codes, the file size taken by GOPHER_GET, a
+    longer wait after a DMA read.
+
 ## Mini rev.C, D, F: the FT812 clock mod
 
 The cores that use the FT812 (boot, tsconf) need the hardware mod of
