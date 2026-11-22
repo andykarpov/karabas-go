@@ -145,7 +145,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 Ядра ПЛИС:
 
 - Загрузочное меню: https://github.com/andykarpov/karabas-go-core-menu
-- Тестовое ядро: https://github.com/andykarpov/karabas-go-core-test
+- Karabas Board Test (проверка всех узлов платы: SRAM / SDRAM аппаратно, SD-карты, CF, FT812, Wi-Fi, звук, видео, ввод; прогоны Auto и Loop; вместо старых тестового ядра и теста SDRAM): https://github.com/andykarpov/karabas-go-core-boardtest
 - TS-Conf: https://github.com/andykarpov/karabas-go-core-tsconf
 - ZX Spectrum Next: https://github.com/andykarpov/karabas-go-core-next
 - Karabas Pro: https://github.com/andykarpov/karabas-go-core-profi

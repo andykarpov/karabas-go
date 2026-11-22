@@ -145,7 +145,7 @@ Shield for the v4 shield with a dot matrix display (3rd floor):
 FPGA cores:
 
 - Boot Menu Core: https://github.com/andykarpov/karabas-go-core-menu
-- Test Core: https://github.com/andykarpov/karabas-go-core-test
+- Karabas Board Test Core (the test of every part of the board: SRAM / SDRAM in hardware, SD cards, CF, FT812, Wi-Fi, sound, video, input; Auto and Loop runs; in place of the old Test and SDRAM test cores): https://github.com/andykarpov/karabas-go-core-boardtest
 - TS-Conf Core: https://github.com/andykarpov/karabas-go-core-tsconf
 - ZX Spectrum Next Core: https://github.com/andykarpov/karabas-go-core-next
 - Karabas Pro Core: https://github.com/andykarpov/karabas-go-core-profi
