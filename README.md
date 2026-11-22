@@ -187,6 +187,8 @@ FPGA cores:
 - QuadSpeccy Core (four Pentagon 128 on one screen): https://github.com/Caasper911/karabas-go-core-quadspeccy
 - SpeccyWall / QuadSpeccyX4 Core (16 Pentagon 128 on one screen, a 4x4 wall at 1280x800): https://github.com/Caasper911/karabas-go-core-quadspeccyx4
 - Uzebox Core (ATmega644 game console; .uze games, SNES pads, SD card or SD image): https://github.com/Caasper911/karabas-go-core-uzebox
+- Heretic Core (made of the Doom core, only the game code changed): https://github.com/Caasper911/karabas-go-core-heretic
+- Hexen Core (of the Doom core: bigger CPU cache, higher clock, hardware block copy, changed game code): https://github.com/Caasper911/karabas-go-core-hexen
 - CRISS CP/M Core (criss.radio.ru; network over the ESP8266): https://github.com/andykarpov/karabas-go-core-criss
 - Gigatron TTL Core (the TTL microcomputer of Marcel van Kervinck and Walter Belgers; .gt1 programs from the SD card): https://github.com/andykarpov/karabas-go-core-gigatron
 - Vector-06C Core (Вектор-06Ц: 3 MHz with the exact wait states, RAM disk, floppy .fdd, AY, tape .wav; 576p of the original frame): https://github.com/andykarpov/karabas-go-core-vector06c
