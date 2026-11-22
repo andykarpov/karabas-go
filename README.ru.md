@@ -183,6 +183,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - QuadSpeccy (четыре Pentagon 128 на одном экране): https://github.com/Caasper911/karabas-go-core-quadspeccy
 - SpeccyWall / QuadSpeccyX4 (16 Pentagon 128 на одном экране, стена 4x4 в 1280x800): https://github.com/Caasper911/karabas-go-core-quadspeccyx4
 - Uzebox (игровая консоль на ATmega644; игры .uze, SNES-джойстики, SD-карта или образ SD): https://github.com/Caasper911/karabas-go-core-uzebox
+- Doom (VexRiscv + doomgeneric; музыка OPL3 / MIDI, сохранения на SD-карте): https://github.com/andykarpov/karabas-go-core-doom
 - Heretic (сделан из ядра Doom, изменён только код игры): https://github.com/Caasper911/karabas-go-core-heretic
 - Hexen (из ядра Doom: больше кеш процессора, выше частота, аппаратная пересылка, изменён код игры): https://github.com/Caasper911/karabas-go-core-hexen
 - КРИСС CP/M (criss.radio.ru; сеть через ESP8266): https://github.com/andykarpov/karabas-go-core-criss
