@@ -21,6 +21,7 @@
         {"file": "boardtest.kg", "repo": "andykarpov/karabas-go-core-boardtest",  "branch": "master",  "path": "src/boardtest.kg"},
         {"file": "boot.kg",      "repo": "andykarpov/karabas-go-core-menu",       "branch": "master",  "path": "src/boot.kg"},
         {"file": "macplus.kg",   "repo": "andykarpov/karabas-go-core-macplus",    "branch": "master",  "path": "src/macplus.kg"},
+        {"file": "musicplayer.kg", "repo": "xdemax/karabas-go-core-player",      "release": "musicplayer.kg"},
         {"file": "msx.kg",       "repo": "andykarpov/karabas-go-core-msx",        "branch": "master",  "path": "src/msx.kg"},
         {"file": "msx2.kg",      "repo": "andykarpov/karabas-go-core-msx2",       "branch": "master",  "path": "src/msx2.kg"},
         {"file": "nanomig.kg",   "repo": "andykarpov/karabas-go-core-nanomig",    "branch": "master",  "path": "src/nanomig.kg"},
