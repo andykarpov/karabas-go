@@ -176,6 +176,7 @@ FPGA cores:
 - Apple //e Core: https://github.com/andykarpov/karabas-go-core-apple2
 - Atari 2600 VCS Core: https://github.com/andykarpov/karabas-go-core-atari2600
 - Atari 800XL Core: https://github.com/xdemax/karabas-go-core-atari800
+- Music Player Core (MOD / XM / S3M / IT / PT3 / PT2 / STC, MP3 experimental; Go and Mini G): https://github.com/xdemax/karabas-go-core-player
 - Amstrad CPC 464 / 664 / 6128 Core: https://github.com/andykarpov/karabas-go-core-cpc
 - BBC Micro Model B / Master 128 Core: https://github.com/andykarpov/karabas-go-core-bbc
 - Bandai WonderSwan / WonderSwan Color Core: https://github.com/andykarpov/karabas-go-core-wonderswan

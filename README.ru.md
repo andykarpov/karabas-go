@@ -172,6 +172,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Apple //e: https://github.com/andykarpov/karabas-go-core-apple2
 - Atari 2600 VCS: https://github.com/andykarpov/karabas-go-core-atari2600
 - Atari 800XL: https://github.com/xdemax/karabas-go-core-atari800
+- Music Player (MOD / XM / S3M / IT / PT3 / PT2 / STC, MP3 экспериментально; Go и Mini G): https://github.com/xdemax/karabas-go-core-player
 - Amstrad CPC 464 / 664 / 6128: https://github.com/andykarpov/karabas-go-core-cpc
 - BBC Micro Model B / Master 128: https://github.com/andykarpov/karabas-go-core-bbc
 - Bandai WonderSwan / WonderSwan Color: https://github.com/andykarpov/karabas-go-core-wonderswan
