@@ -64,7 +64,7 @@ with these cores:
 | --- | --- |
 | `cores/` | the cores, `*.kg` (one file for all the boards) |
 | `firmware/` | the RP2040 firmware of each board; `esp32-s3/` the ESP32-S3 of the Mini G shield |
-| `software/` | extra files for the cores (`TBBLUE.FW` of ZX Next, `esxdos/NMI.SYS` of the Bob Fossil browser, `esxdos/RTC.SYS`, plugins) |
+| `software/` | extra files for the cores (`TBBLUE.FW` of ZX Next, `esxdos/NMI.SYS` of the Bob Fossil browser, `esxdos/RTC.SYS`, plugins, the Gopher browsers `karabas_gopher.spg` and `gopher_esp32.spg` for TS-Conf) |
 | `docs/go/`, `docs/mini/` | schematics (PDF), interactive BOMs, renders; `docs/mini/revF_mod.md` the FT812 clock mod of Mini rev.C, D, F; `docs/mini/revG2_mod.md` the SDRAM ~CS mod of rev.G2 |
 | `pcb/go/`, `pcb/mini/` | gerbers of each revision, `PCB_CHANGELOG.md` |
 | `case/go/`, `case/mini/` | 3D enclosure models |

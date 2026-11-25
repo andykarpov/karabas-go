@@ -67,6 +67,16 @@ Before flashing it over an older build:
     not published the sources). Patched: the new player codes, the file size taken by GOPHER_GET, a
     longer wait after a DMA read.
 
+## TS-Conf: the Gopher browser karabas_gopher.spg
+
+`software/karabas_gopher.spg` is our own Gopher browser for TS-Conf
+([sources](https://github.com/andykarpov/karabas-gopher)). Copy it to the SD card and start it from
+Wild Commander. It works with ZiFi32 (any firmware; tracker music needs the 0.6.4 firmware above),
+with the ESP8266 ZiFi (AT firmware, set up by the boot core) or over USB serial; it downloads files
+into `/downloads`, plays PT3 on the AY, MOD on the General Sound, XM / S3M on ZiFi32 in the
+background, and shows `.scr`, multicolour, gigascreen and `.bmp` pictures (S = slide show).
+Settings and bookmarks live in `/zifi/gopher.ini` and `/zifi/bookmarks.txt`.
+
 ## Mini rev.C, D, F: the FT812 clock mod
 
 The cores that use the FT812 (boot, tsconf) need the hardware mod of
