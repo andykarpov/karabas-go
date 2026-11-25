@@ -194,6 +194,7 @@ FPGA cores:
 - CRISS CP/M Core (criss.radio.ru; network over the ESP8266): https://github.com/andykarpov/karabas-go-core-criss
 - Gigatron TTL Core (the TTL microcomputer of Marcel van Kervinck and Walter Belgers; .gt1 programs from the SD card): https://github.com/andykarpov/karabas-go-core-gigatron
 - Vector-06C Core (Вектор-06Ц: 3 MHz with the exact wait states, RAM disk, floppy .fdd, AY, tape .wav; 576p of the original frame): https://github.com/andykarpov/karabas-go-core-vector06c
+- Ocean-240 Core (Океан-240.2: written from the schematic of the replica; 240.2 / Turbo / Test models, the RAM disk kept on the SD card, tape .wav, the serial port on USB): https://github.com/andykarpov/karabas-go-core-ocean240
 
 The firmware: https://github.com/andykarpov/karabas-go-firmware
 

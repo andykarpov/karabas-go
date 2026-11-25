@@ -190,6 +190,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - КРИСС CP/M (criss.radio.ru; сеть через ESP8266): https://github.com/andykarpov/karabas-go-core-criss
 - Gigatron TTL (TTL-микрокомпьютер Марселя ван Кервинка и Вальтера Белгерса; программы .gt1 с SD-карты): https://github.com/andykarpov/karabas-go-core-gigatron
 - Вектор-06Ц (3 МГц с точными тактами ожидания, квазидиск, дискеты .fdd, AY, лента .wav; 576p с кадром оригинала): https://github.com/andykarpov/karabas-go-core-vector06c
+- Океан-240.2 (по схеме реплики; модели 240.2 / Turbo / Test, электронный диск на SD-карте, лента .wav, последовательный порт на USB): https://github.com/andykarpov/karabas-go-core-ocean240
 
 Прошивка: https://github.com/andykarpov/karabas-go-firmware
 
