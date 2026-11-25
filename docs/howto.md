@@ -46,10 +46,12 @@ Read the manual of each core about what goes onto SD card #2.
 The firmware in `firmware/esp32-s3/` (2026-11-26) is ZiFi32 of tslabs/zx-evo `master` plus the fixes
 of [andykarpov/zx-evo `karabas/esp32-release`](https://github.com/andykarpov/zx-evo/tree/karabas/esp32-release):
 upstream PRs [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94),
-[#96](https://github.com/tslabs/zx-evo/pull/96) and [#97](https://github.com/tslabs/zx-evo/pull/97).
+[#96](https://github.com/tslabs/zx-evo/pull/96), [#97](https://github.com/tslabs/zx-evo/pull/97) and
+[#98](https://github.com/tslabs/zx-evo/pull/98).
 #97 adds an audio stream player: MP3, WAV, Ogg Vorbis and FLAC sent by the host, decoded on the ESP
-(`software/ESPPLAY.WMF` below); since 2026-11-26 the player takes a PUSH again when the end of
-the previous one (W_END) was lost, so playback no longer stops after minutes of a long file.
+(`software/ESPPLAY.WMF` below); the player takes a PUSH again when the end of the previous one
+(W_END) was lost, so playback no longer stops after minutes of a long file. #98 adds AAC / M4A
+(also HE-AAC) and internet radio: the ESP reads an HTTP / HTTPS stream over Wi-Fi itself.
 #94 and #96 fix:
 
 - hangs: RESET / REBOOT of the host now reach the ESP while a command hangs, the stream reader
@@ -86,19 +88,22 @@ OPL3 VGMs were checked on the Mini G; OPL4 VGMs were not checked yet.
 
 ## TS-Conf: the audio player ESPPLAY.WMF (Mini G)
 
-`software/ESPPLAY.WMF` is a Wild Commander plugin that plays MP3, WAV, Ogg Vorbis and FLAC on the
-ESP32-S3 of the Mini G shield, version 1.0.1 (fixes the hang after minutes of a long file; needs the
-firmware of 2026-11-26 for it)
+`software/ESPPLAY.WMF` is a Wild Commander plugin that plays MP3, WAV, Ogg Vorbis, FLAC, AAC and M4A,
+play lists (M3U, M3U8, PLS) and internet radio from them on the ESP32-S3 of the Mini G shield,
+version 1.1.0
 ([sources, releases and the manual](https://github.com/andykarpov/espplay-wmf)). It needs the
 ESP firmware of `firmware/esp32-s3/` above. Without it, the plugin says that the ESP has no player.
 
 - Copy it into the `WC` folder of SD card #2.
 - Add `ESPPLAY.WMF` at the top of the `[PLUGINS]` section of `WC/wc.ini`, before other plugins
   that open MP3 or WAV (`GSPLAYER.WMF`).
-- Enter on a `.mp3`, `.wav`, `.ogg` or `.flac` file plays it.
+- Enter on a `.mp3`, `.wav`, `.ogg`, `.flac`, `.aac`, `.m4a`, `.m3u`, `.m3u8` or `.pls` file plays it.
+- A play list plays its entries (paths relative to the list); an `http://` / `https://` entry is a
+  radio station, read by the ESP over Wi-Fi. If the ESP is not on Wi-Fi, the plugin joins the network
+  saved by `gopher_esp32.spg` (`[zifi32]` `ssid=` / `password=` of `/zifi/gopher.ini`).
 - Keys:
-  - Space: next file;
-  - P: previous file;
+  - Space: next file (in a play list: next entry);
+  - P: previous file (entry);
   - arrows left / right: seek 10 s;
   - S: pause;
   - +/- or arrows up / down: volume;
