@@ -104,11 +104,11 @@ ESP firmware of `firmware/esp32-s3/` above. Without it, the plugin says that the
 
 ## TS-Conf: the Gopher browser karabas_gopher.spg
 
-`software/karabas_gopher.spg` is our own Gopher browser for TS-Conf, version 1.0
+`software/karabas_gopher.spg` is our own Gopher browser for TS-Conf, version 1.1
 ([sources and releases](https://github.com/andykarpov/karabas-gopher)). Copy it to the SD card and start it from
 Wild Commander. It works with ZiFi32 (any firmware; tracker music needs the 0.6.4 firmware above),
 with the ESP8266 ZiFi (AT firmware, set up by the boot core) or over USB serial; it downloads files
-into `/downloads/YYYY_MM_DD/` (file times from the board clock), plays PT3 on the AY, MOD on the General Sound, XM / S3M on ZiFi32 in the
+into `/downloads/YYYY_MM_DD/` (file times from the board clock), plays PT3, PT2, STC and ASC on the AY, MOD on the General Sound, XM / S3M on ZiFi32 in the
 background, and shows `.scr`, multicolour, gigascreen and `.bmp` pictures (S = slide show).
 Settings and bookmarks live in `/zifi/gopher.ini` and `/zifi/bookmarks.txt`.
 
