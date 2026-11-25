@@ -43,12 +43,14 @@ Read the manual of each core about what goes onto SD card #2.
   several, give the port: `flash.bat COM5`, `./flash.sh /dev/ttyACM1`
 - After a successful flash, remove the JP11 jumper, disconnect both USB-C cables
 
-The firmware in `firmware/esp32-s3/` (2026-11-25) is ZiFi32 of tslabs/zx-evo `master` plus the fixes
+The firmware in `firmware/esp32-s3/` (2026-11-26) is ZiFi32 of tslabs/zx-evo `master` plus the fixes
 of [andykarpov/zx-evo `karabas/esp32-release`](https://github.com/andykarpov/zx-evo/tree/karabas/esp32-release):
 upstream PRs [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94),
 [#96](https://github.com/tslabs/zx-evo/pull/96) and [#97](https://github.com/tslabs/zx-evo/pull/97).
 #97 adds an audio stream player: MP3, WAV, Ogg Vorbis and FLAC sent by the host, decoded on the ESP
-(`software/ESPPLAY.WMF` below). #94 and #96 fix:
+(`software/ESPPLAY.WMF` below); since 2026-11-26 the player takes a PUSH again when the end of
+the previous one (W_END) was lost, so playback no longer stops after minutes of a long file.
+#94 and #96 fix:
 
 - hangs: RESET / REBOOT of the host now reach the ESP while a command hangs, the stream reader
   could deadlock, Gopher waited for ever on a silent host;
@@ -85,7 +87,8 @@ OPL3 VGMs were checked on the Mini G; OPL4 VGMs were not checked yet.
 ## TS-Conf: the audio player ESPPLAY.WMF (Mini G)
 
 `software/ESPPLAY.WMF` is a Wild Commander plugin that plays MP3, WAV, Ogg Vorbis and FLAC on the
-ESP32-S3 of the Mini G shield, version 1.0.0
+ESP32-S3 of the Mini G shield, version 1.0.1 (fixes the hang after minutes of a long file; needs the
+firmware of 2026-11-26 for it)
 ([sources, releases and the manual](https://github.com/andykarpov/espplay-wmf)). It needs the
 ESP firmware of `firmware/esp32-s3/` above. Without it, the plugin says that the ESP has no player.
 
