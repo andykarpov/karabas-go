@@ -38,17 +38,23 @@ Read the manual of each core about what goes onto SD card #2.
 - Close jumper JP11
 - Power the main board with USB-C
 - Connect a secondary USB-C cable to the upper board
-- Edit the COM port in `flash.bat` (or `flash.sh`) and run it
+- Run `flash.bat` (Windows) or `flash.sh` (Linux, macOS; needs `esptool`: `pip install esptool`).
+  They find the ESP32-S3 by its USB id (Espressif, VID 303A); if it is not found, or there are
+  several, give the port: `flash.bat COM5`, `./flash.sh /dev/ttyACM1`
 - After a successful flash, remove the JP11 jumper, disconnect both USB-C cables
 
-The firmware in `firmware/esp32-s3/` (2026-11-21) is ZiFi32 of tslabs/zx-evo `master` plus the fixes
-of [andykarpov/zx-evo `karabas/esp32-fixes`](https://github.com/andykarpov/zx-evo/tree/karabas/esp32-fixes)
-(upstream PR [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94)). They fix:
+The firmware in `firmware/esp32-s3/` (2026-11-25) is ZiFi32 of tslabs/zx-evo `master` plus the fixes
+of [andykarpov/zx-evo `karabas/esp32-release`](https://github.com/andykarpov/zx-evo/tree/karabas/esp32-release):
+upstream PRs [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94) and
+[#96](https://github.com/tslabs/zx-evo/pull/96). They fix:
 
-- the ESP no longer answering until a power cycle after Gopher or stream commands;
+- hangs: RESET / REBOOT of the host now reach the ESP while a command hangs, the stream reader
+  could deadlock, Gopher waited for ever on a silent host;
 - leaks;
 - stalled downloads;
-- Wi-Fi connects that never got an IP.
+- Wi-Fi connects that never got an IP;
+- XM modules which hung or crashed the player (song length 256, loops of length 0, loops past the
+  sample, more than 12 envelope points, 16-bit samples of odd length).
 
 Before flashing it over an older build:
 
