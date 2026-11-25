@@ -45,8 +45,10 @@ Read the manual of each core about what goes onto SD card #2.
 
 The firmware in `firmware/esp32-s3/` (2026-11-25) is ZiFi32 of tslabs/zx-evo `master` plus the fixes
 of [andykarpov/zx-evo `karabas/esp32-release`](https://github.com/andykarpov/zx-evo/tree/karabas/esp32-release):
-upstream PRs [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94) and
-[#96](https://github.com/tslabs/zx-evo/pull/96). They fix:
+upstream PRs [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94),
+[#96](https://github.com/tslabs/zx-evo/pull/96) and [#97](https://github.com/tslabs/zx-evo/pull/97).
+#97 adds an audio stream player: MP3, WAV, Ogg Vorbis and FLAC sent by the host, decoded on the ESP
+(`software/ESPPLAY.WMF` below). #94 and #96 fix:
 
 - hangs: RESET / REBOOT of the host now reach the ESP while a command hangs, the stream reader
   could deadlock, Gopher waited for ever on a silent host;
@@ -66,6 +68,26 @@ Before flashing it over an older build:
   - `gopher_esp32.spg`: the Gopher browser, a binary patch of its 2026-04-27 build (the author has
     not published the sources). Patched: the new player codes, the file size taken by GOPHER_GET, a
     longer wait after a DMA read.
+
+## TS-Conf: the audio player ESPPLAY.WMF (Mini G)
+
+`software/ESPPLAY.WMF` is a Wild Commander plugin that plays MP3, WAV, Ogg Vorbis and FLAC on the
+ESP32-S3 of the Mini G shield, version 1.0.0
+([sources, releases and the manual](https://github.com/andykarpov/espplay-wmf)). It needs the
+ESP firmware of `firmware/esp32-s3/` above. Without it, the plugin says that the ESP has no player.
+
+- Copy it into the `WC` folder of SD card #2.
+- Add `ESPPLAY.WMF` at the top of the `[PLUGINS]` section of `WC/wc.ini`, before other plugins
+  that open MP3 or WAV (`GSPLAYER.WMF`).
+- Enter on a `.mp3`, `.wav`, `.ogg` or `.flac` file plays it.
+- Keys:
+  - Space: next file;
+  - P: previous file;
+  - arrows left / right: seek 10 s;
+  - S: pause;
+  - +/- or arrows up / down: volume;
+  - Esc: back to WC.
+- Up to FLAC 48 kHz / 24 bit. WC reads the card at about 270 KB/s, so FLAC 96 kHz / 24 bit stutters.
 
 ## TS-Conf: the Gopher browser karabas_gopher.spg
 
