@@ -69,6 +69,19 @@ Before flashing it over an older build:
     not published the sources). Patched: the new player codes, the file size taken by GOPHER_GET, a
     longer wait after a DMA read.
 
+## TS-Conf: the VGM player VGMPLAY.WMF
+
+`software/VGMPLAY.WMF` is a Wild Commander plugin that plays VGM / VGZ on the sound chips of the
+TS-Conf core:
+- OPL2 / OPL3 and the FM part of the OPL4;
+- the wave part of the OPL4 (ZXM-MoonSound ports #7E / #7F);
+- AY / YM.
+
+It is version v0.9.03-beta of Alex Korochinskiy
+([git.alexkorochinskiy.ru/alex/VGMPLAY.WMF](https://git.alexkorochinskiy.ru/alex/VGMPLAY.WMF)), based on
+[demyanenko-d/VGMPLAY.WMF](https://github.com/demyanenko-d/VGMPLAY.WMF). Copy it into the `WC` folder.
+OPL3 VGMs were checked on the Mini G; OPL4 VGMs were not checked yet.
+
 ## TS-Conf: the audio player ESPPLAY.WMF (Mini G)
 
 `software/ESPPLAY.WMF` is a Wild Commander plugin that plays MP3, WAV, Ogg Vorbis and FLAC on the
