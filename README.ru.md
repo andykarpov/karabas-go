@@ -191,6 +191,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Gigatron TTL (TTL-микрокомпьютер Марселя ван Кервинка и Вальтера Белгерса; программы .gt1 с SD-карты): https://github.com/andykarpov/karabas-go-core-gigatron
 - Вектор-06Ц (3 МГц с точными тактами ожидания, квазидиск, дискеты .fdd, AY, лента .wav; 576p с кадром оригинала): https://github.com/andykarpov/karabas-go-core-vector06c
 - Океан-240.2 (по схеме реплики; модели 240.2 / Turbo / Test, электронный диск на SD-карте, лента .wav, последовательный порт на USB): https://github.com/andykarpov/karabas-go-core-ocean240
+- Game Boy / Game Boy Color (ядро MiSTer; все мапперы, сохранения и часы MBC3 на SD-карте, палитры DMG, коррекция цвета GBC; 800x600): https://github.com/andykarpov/karabas-go-core-gameboy
 
 Прошивка: https://github.com/andykarpov/karabas-go-firmware
 
