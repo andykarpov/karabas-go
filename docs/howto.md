@@ -45,10 +45,11 @@ Read the manual of each core about what goes onto SD card #2.
 
 The firmware in `firmware/esp32-s3/` (2026-11-26) is ZiFi32 of the fork of Alex Korochinskiy
 ([git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-](https://git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-),
-based on tslabs/zx-evo `pentevo/esp32`) with our PRs #1-#3 merged, plus our PRs #4 and #5, built with
-ESP-IDF v6.1 and the Doom options of its `src/DOOM-HARDWARE-BUILD.md`; the sources are
-[andykarpov/ZIFI32--ESP32- `karabas/doom-ram`](https://git.alexkorochinskiy.ru/andykarpov/ZIFI32--ESP32-/src/branch/karabas/doom-ram) 939d224.
-The fork adds an SMB2/3 share of the SD card of the machine (with its Wild Commander plugin),
+based on tslabs/zx-evo `pentevo/esp32`), `main`
+[dbbaeae](https://git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-/src/commit/dbbaeae) with our PRs #1-#5
+merged, built with ESP-IDF v6.1 and the Doom options of its `src/DOOM-HARDWARE-BUILD.md`.
+The fork adds an SMB2/3 share of the SD card of the machine (served by its Wild Commander plugin
+`smbvfs.wmf`, not published yet),
 AT commands on the UART (ESP8266 ZiFi compatibility), MOD / S3M in the tracker, an OPL MUS player and
 Doom services (see its README). Our PRs:
 
