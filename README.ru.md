@@ -187,6 +187,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Doom (VexRiscv + doomgeneric; музыка OPL3 / MIDI, сохранения на SD-карте): https://github.com/andykarpov/karabas-go-core-doom
 - Heretic (сделан из ядра Doom, изменён только код игры): https://github.com/Caasper911/karabas-go-core-heretic
 - Hexen (из ядра Doom: больше кеш процессора, выше частота, аппаратная пересылка, изменён код игры): https://github.com/Caasper911/karabas-go-core-hexen
+- Quake (VexRiscv + аппаратный FPU, отрисовка спанов и растеризатор полигонов в ПЛИС; свой pak0.pak на SD-карте, сохранения на SD-карте): https://github.com/Caasper911/karabas-go-core-quake
 - КРИСС CP/M (criss.radio.ru; сеть через ESP8266): https://github.com/andykarpov/karabas-go-core-criss
 - Gigatron TTL (TTL-микрокомпьютер Марселя ван Кервинка и Вальтера Белгерса; программы .gt1 с SD-карты): https://github.com/andykarpov/karabas-go-core-gigatron
 - Вектор-06Ц (3 МГц с точными тактами ожидания, квазидиск, дискеты .fdd, AY, лента .wav; 576p с кадром оригинала): https://github.com/andykarpov/karabas-go-core-vector06c

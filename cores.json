@@ -17,6 +17,7 @@
         {"file": "doom.kg",      "repo": "andykarpov/karabas-go-core-doom",       "branch": "master",  "path": "src/doom.kg"},
         {"file": "heretic.kg",   "repo": "Caasper911/karabas-go-core-heretic",    "branch": "master",  "path": "src/heretic.kg"},
         {"file": "hexen.kg",     "repo": "Caasper911/karabas-go-core-hexen",      "branch": "master",  "path": "src/hexen.kg"},
+        {"file": "quake.kg",     "repo": "Caasper911/karabas-go-core-quake",      "branch": "master",  "path": "src/quake.kg"},
         {"file": "gigatron.kg",  "repo": "andykarpov/karabas-go-core-gigatron",   "branch": "master",  "path": "src/gigatron.kg"},
         {"file": "gameboy.kg",   "repo": "andykarpov/karabas-go-core-gameboy",    "branch": "master",  "path": "src/gameboy.kg"},
         {"file": "boardtest.kg", "repo": "andykarpov/karabas-go-core-boardtest",  "branch": "master",  "path": "src/boardtest.kg"},
