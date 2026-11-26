@@ -46,7 +46,7 @@ Read the manual of each core about what goes onto SD card #2.
 The firmware in `firmware/esp32-s3/` (2026-11-26) is ZiFi32 of the fork of Alex Korochinskiy
 ([git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-](https://git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-),
 based on tslabs/zx-evo `pentevo/esp32`) plus our PRs to it, built with ESP-IDF v6.1; the sources are
-[andykarpov/ZIFI32--ESP32- `karabas/release`](https://git.alexkorochinskiy.ru/andykarpov/ZIFI32--ESP32-/src/branch/karabas/release).
+[andykarpov/ZIFI32--ESP32- `karabas/release`](https://git.alexkorochinskiy.ru/andykarpov/ZIFI32--ESP32-/src/branch/karabas/release) e3bc1b5.
 The fork adds an SMB2/3 share of the SD card of the machine (with its Wild Commander plugin),
 AT commands on the UART (ESP8266 ZiFi compatibility), MOD / S3M in the tracker, an OPL MUS player and
 Doom services (see its README). Our PRs:
