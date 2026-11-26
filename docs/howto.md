@@ -57,7 +57,8 @@ upstream PRs [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94),
 - hangs: RESET / REBOOT of the host now reach the ESP while a command hangs, the stream reader
   could deadlock, Gopher waited for ever on a silent host;
 - leaks;
-- stalled downloads;
+- stalled downloads (the TCP window; and the lwIP mailboxes, which that change had left at the
+  defaults 32 / 6 / 6 - now 64);
 - Wi-Fi connects that never got an IP;
 - XM modules which hung or crashed the player (song length 256, loops of length 0, loops past the
   sample, more than 12 envelope points, 16-bit samples of odd length).
