@@ -80,7 +80,7 @@ Before flashing it over an older build:
   `spiffs` and an 8 MB `fat`. What the older `fat` / `spiffs` held is lost. Save the whole flash first
   if needed: `esptool --chip esp32s3 -p <port> read-flash 0 0x1000000 backup.bin`.
 - The player commands of the ESP changed (XM / MOD / S3M). Take the matching files from `software/`:
-  - `FTVIEW.WMF`: the Wild Commander plugin that plays XM; goes into the `WC` folder.
+  - `XMPLAY.WMF` and `FTVIEW.WMF`: the Wild Commander plugins for tracker music and pictures (below).
   - `gopher_esp32.spg`: the Gopher browser, a binary patch of its 2026-04-27 build (the author has
     not published the sources). Patched: the new player codes, the file size taken by GOPHER_GET, a
     longer wait after a DMA read.
@@ -97,6 +97,32 @@ It is version v0.9.03-beta of Alex Korochinskiy
 ([git.alexkorochinskiy.ru/alex/VGMPLAY.WMF](https://git.alexkorochinskiy.ru/alex/VGMPLAY.WMF)), based on
 [demyanenko-d/VGMPLAY.WMF](https://github.com/demyanenko-d/VGMPLAY.WMF). Copy it into the `WC` folder.
 OPL3 VGMs were checked on the Mini G; OPL4 VGMs were not checked yet.
+
+## TS-Conf: the tracker player XMPLAY.WMF and the viewer FTVIEW.WMF (Mini G)
+
+Both are Wild Commander plugins of Alex Korochinskiy; copy them into the `WC` folder of SD card #2.
+
+`software/XMPLAY.WMF`
+([git.alexkorochinskiy.ru/alex/xmplayer](https://git.alexkorochinskiy.ru/alex/xmplayer), 168d6a7) plays
+`.xm`, `.xmz` (gzipped XM) and `.s3m` on the ESP32-S3 (the firmware of `firmware/esp32-s3/` above):
+the Z80 sends the file, the ESP plays it. A window shows the file, the state, the pattern, the row,
+the BPM, the time and a progress bar; at the end of a module the next file of the folder starts.
+- Keys:
+  - PgDn, Enter: next file;
+  - PgUp: previous file;
+  - Esc: stop and back to WC;
+  - Space: back to WC, the music goes on playing.
+- `XMPLAY.WMF -stoponerror=1` in `WC/wc.ini`: stop on a module the ESP can not play, instead of going
+  to the next file (to find the bad file of a collection).
+
+`software/FTVIEW.WMF` ([git.alexkorochinskiy.ru/alex/ftview](https://git.alexkorochinskiy.ru/alex/ftview),
+461f44d) shows pictures and video on the FT812: `.jpg`, `.png`, `.dls` (an FT812 display list), `.dxp`
+and `.avi` (full screen, with sound). Keys: PgDn / PgUp next / previous file, Esc back to WC.
+An `.avi` can not be left with a key (a known limit of the plugin): reset the machine.
+
+This FTVIEW no longer plays XM: the older FTVIEW of this folder (and the one of tslabs) registered
+`.xm` / `.xmz` too, and Wild Commander gives an extension to one plugin only. Do not keep the older
+FTVIEW next to XMPLAY.
 
 ## TS-Conf: the audio player ESPPLAY.WMF (Mini G)
 
