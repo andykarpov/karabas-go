@@ -43,25 +43,29 @@ Read the manual of each core about what goes onto SD card #2.
   several, give the port: `flash.bat COM5`, `./flash.sh /dev/ttyACM1`
 - After a successful flash, remove the JP11 jumper, disconnect both USB-C cables
 
-The firmware in `firmware/esp32-s3/` (2026-11-26) is ZiFi32 of tslabs/zx-evo `master` plus the fixes
-of [andykarpov/zx-evo `karabas/esp32-release`](https://github.com/andykarpov/zx-evo/tree/karabas/esp32-release):
-upstream PRs [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94),
-[#96](https://github.com/tslabs/zx-evo/pull/96), [#97](https://github.com/tslabs/zx-evo/pull/97) and
-[#98](https://github.com/tslabs/zx-evo/pull/98).
-#97 adds an audio stream player: MP3, WAV, Ogg Vorbis and FLAC sent by the host, decoded on the ESP
-(`software/ESPPLAY.WMF` below); the player takes a PUSH again when the end of the previous one
-(W_END) was lost, so playback no longer stops after minutes of a long file. #98 adds AAC / M4A
-(also HE-AAC) and internet radio: the ESP reads an HTTP / HTTPS stream over Wi-Fi itself.
-#94 and #96 fix:
+The firmware in `firmware/esp32-s3/` (2026-11-26) is ZiFi32 of the fork of Alex Korochinskiy
+([git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-](https://git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-),
+based on tslabs/zx-evo `pentevo/esp32`) plus our PRs to it, built with ESP-IDF v6.1; the sources are
+[andykarpov/ZIFI32--ESP32- `karabas/release`](https://git.alexkorochinskiy.ru/andykarpov/ZIFI32--ESP32-/src/branch/karabas/release) e3bc1b5.
+The fork adds an SMB2/3 share of the SD card of the machine (with its Wild Commander plugin),
+AT commands on the UART (ESP8266 ZiFi compatibility), MOD / S3M in the tracker, an OPL MUS player and
+Doom services (see its README). Our PRs:
 
-- hangs: RESET / REBOOT of the host now reach the ESP while a command hangs, the stream reader
-  could deadlock, Gopher waited for ever on a silent host;
-- leaks;
-- stalled downloads (the TCP window; and the lwIP mailboxes, which that change had left at the
-  defaults 32 / 6 / 6 - now 64);
-- Wi-Fi connects that never got an IP;
-- XM modules which hung or crashed the player (song length 256, loops of length 0, loops past the
-  sample, more than 12 envelope points, 16-bit samples of odd length).
+- [#1](https://git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-/pulls/1): XM modules which hung or crashed
+  the player (song length 256, loops of length 0, loops past the sample, more than 12 envelope points,
+  16-bit samples of odd length);
+- [#2](https://git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-/pulls/2): hangs (the stream reader could
+  deadlock, Gopher waited for ever on a silent host), leaks, bounds of the host input, stalled
+  downloads (the TCP window, the lwIP mailboxes), Wi-Fi connects that never got an IP;
+- [#3](https://git.alexkorochinskiy.ru/alex/ZIFI32--ESP32-/pulls/3): the audio stream player of
+  `software/ESPPLAY.WMF` (MP3, WAV, Ogg Vorbis, FLAC, AAC / M4A, also HE-AAC) and internet radio
+  (HTTP / HTTPS, read by the ESP itself).
+
+The same fixes for the tslabs firmware are upstream PRs [tslabs/zx-evo#94](https://github.com/tslabs/zx-evo/pull/94),
+[#96](https://github.com/tslabs/zx-evo/pull/96), [#97](https://github.com/tslabs/zx-evo/pull/97) and
+[#98](https://github.com/tslabs/zx-evo/pull/98) (the previous build here,
+[andykarpov/zx-evo `karabas/esp32-release`](https://github.com/andykarpov/zx-evo/tree/karabas/esp32-release)).
+The fork bundles libsmb2 (LGPL-2.1).
 
 Before flashing it over an older build:
 
