@@ -95,6 +95,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 Последняя ревизия платы — Rev.B4 ([список изменений](pcb/go/PCB_CHANGELOG.md)). Rev.B4 может
 не совсем подходить к 3D-моделям корпусов: её карты microSD немного сдвинуты вперёд.
 Исходники платы: [karabas-go-pcb](https://github.com/andykarpov/karabas-go-pcb).
+Доработка сигнала смены дискеты (DSKCHG) для всех ревизий: [Hotfix-DSKCHG](https://github.com/andykarpov/karabas-go-pcb/blob/master/Hotfix-DSKCHG_rus.md).
 
 ![image](docs/go/karabas-go-top.png)
 

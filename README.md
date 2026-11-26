@@ -95,6 +95,7 @@ with these cores:
 The latest PCB revision is Rev.B4 ([changelog](pcb/go/PCB_CHANGELOG.md)). Rev.B4 could be a bit
 incompatible with the 3D enclosure models: its microSD cards are shifted a bit forward.
 PCB sources: [karabas-go-pcb](https://github.com/andykarpov/karabas-go-pcb).
+Floppy disk change (DSKCHG) hotfix for all revisions: [Hotfix-DSKCHG](https://github.com/andykarpov/karabas-go-pcb/blob/master/Hotfix-DSKCHG.md).
 
 ![image](docs/go/karabas-go-top.png)
 
