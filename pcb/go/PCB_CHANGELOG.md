@@ -5,6 +5,7 @@
 - Added ESP32-S3 module with connection to the FT QSPI and FPGA as I2S slave
 -- ESP32 I2S bus connected to the unused conf flash pins CONF_IO0, CONF_IO2, CONF_IO3
 -- ESP32_SPI_CS pin will use a ESP_BOOT or UART_CTS (this is an open question yet, a set of jumpers is exists to decide later)
+-- EDP32 UART routed directly to RP2040 (to expose as CDC3)
 - Added Disk Change hw mod
 
 Please do not use this version yet. The development is in progress...
