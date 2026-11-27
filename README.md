@@ -176,6 +176,7 @@ FPGA cores:
 - Acorn Archimedes Core (RISC OS 3.11, needs your own ROM image): https://github.com/andykarpov/karabas-go-core-archie
 - Apple //e Core: https://github.com/andykarpov/karabas-go-core-apple2
 - Atari 2600 VCS Core: https://github.com/andykarpov/karabas-go-core-atari2600
+- Atari 7800 ProSystem Core (the MiSTer k7800 core; .a78 cartridges, POKEY, optional BIOS file): https://github.com/andykarpov/karabas-go-core-atari7800
 - Atari 800XL Core: https://github.com/xdemax/karabas-go-core-atari800
 - Music Player Core (MOD / XM / S3M / IT / PT3 / PT2 / STC, MP3 experimental; Go and Mini G): https://github.com/xdemax/karabas-go-core-player
 - Amstrad CPC 464 / 664 / 6128 Core: https://github.com/andykarpov/karabas-go-core-cpc
