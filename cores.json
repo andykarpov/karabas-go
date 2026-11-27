@@ -44,6 +44,7 @@
         {"file": "rc2014.kg",    "repo": "andykarpov/karabas-go-core-rc2014",     "branch": "master",  "path": "src/rc2014.kg"},
         {"file": "rk.kg",        "repo": "andykarpov/karabas-go-core-rk",         "branch": "master",  "path": "src/rk.kg"},
         {"file": "sega.kg",      "repo": "andykarpov/karabas-go-core-sega",       "branch": "master",  "path": "src/sega.kg"},
+        {"file": "sms.kg",       "repo": "andykarpov/karabas-go-core-sms",        "branch": "master",  "path": "src/sms.kg"},
         {"file": "snes.kg",      "repo": "andykarpov/karabas-go-core-snes",       "branch": "master",  "path": "src/snes.kg"},
         {"file": "spec256.kg",   "repo": "andykarpov/karabas-go-core-spec256",    "branch": "master",  "path": "src/spec256.kg"},
         {"file": "term.kg",      "repo": "andykarpov/karabas-go-core-term",       "branch": "master",  "path": "src/term.kg"},
