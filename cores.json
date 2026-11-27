@@ -9,6 +9,7 @@
         {"file": "apple2.kg",    "repo": "andykarpov/karabas-go-core-apple2",     "branch": "master",  "path": "src/apple2.kg"},
         {"file": "atari800.kg",  "repo": "xdemax/karabas-go-core-atari800",       "release": "atari800.kg"},
         {"file": "atarist.kg",   "repo": "andykarpov/karabas-go-core-atarist",    "branch": "master",  "path": "src/atarist.kg"},
+        {"file": "lynx.kg",      "repo": "andykarpov/karabas-go-core-lynx",       "branch": "master",  "path": "src/lynx.kg"},
         {"file": "baseconf.kg",  "repo": "andykarpov/karabas-go-core-baseconf",   "branch": "master",  "path": "src/baseconf.kg"},
         {"file": "c64.kg",       "repo": "xdemax/karabas-go-core-c64",            "release": "c64.kg"},
         {"file": "bbc.kg",       "repo": "andykarpov/karabas-go-core-bbc",        "branch": "master",  "path": "src/bbc.kg"},
