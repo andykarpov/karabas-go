@@ -124,6 +124,26 @@ This FTVIEW no longer plays XM: the older FTVIEW of this folder (and the one of 
 `.xm` / `.xmz` too, and Wild Commander gives an extension to one plugin only. Do not keep the older
 FTVIEW next to XMPLAY.
 
+## TS-Conf: the viewer FTVIEW32.WMF with the AVI player (Mini G)
+
+`software/FTVIEW32.WMF` is the FTVIEW of Alex Korochinskiy above with the AVI player of
+[Wild Commander Improved](https://github.com/andrewinsidelazarev/Wild-Commander-Improved) taken over
+for the stock Wild Commander 1.11, version 1.0.0
+([sources, releases and the manual](https://github.com/andykarpov/ftview-wmf)).
+- An MJPEG `.avi` plays frame by frame with a panel (progress bar, time), pause, seek and restart:
+  Space pause, Left / Right seek, Home from the start, Esc back to WC.
+- The sound: PCM 8 bit on General Sound; IMA ADPCM, PCM 16 bit, A-law, u-law on the ESP32-S3 (the
+  firmware of `firmware/esp32-s3/` above). A video it can not play so (other sound, 23.976 fps, a
+  frame over about 229 000 points such as 640x360) is played by the FT812 as before, without seek;
+  Esc leaves it now.
+- The FT812 runs 800x600 at 40 MHz by default (1024x768 at 64 MHz of the FTVIEW above gives green
+  and magenta specks on the Mini G). Another mode: `FTVIEW32.WMF -mode=N` in `WC/wc.ini`, N a mode of
+  the FT812 SDK (the table in the manual).
+- Pictures (`.jpg`, `.png`, `.dls`, `.dxp`) as in the FTVIEW above.
+
+It registers the same extensions as `FTVIEW.WMF`: copy it into the `WC` folder of SD card #2 and put
+`FTVIEW32.WMF` instead of `FTVIEW.WMF` into the `[PLUGINS]` of `WC/wc.ini` (only one of the two).
+
 ## TS-Conf: the audio player ESPPLAY.WMF (Mini G)
 
 `software/ESPPLAY.WMF` is a Wild Commander plugin that plays MP3, WAV, Ogg Vorbis, FLAC, AAC and M4A,
