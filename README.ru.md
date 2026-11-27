@@ -173,6 +173,7 @@ Mini G. В этом репозитории лежит всё, что запис�
 - Apple //e: https://github.com/andykarpov/karabas-go-core-apple2
 - Atari 2600 VCS: https://github.com/andykarpov/karabas-go-core-atari2600
 - Atari 7800 ProSystem (ядро k7800 из MiSTer; картриджи .a78, POKEY, свой BIOS по желанию): https://github.com/andykarpov/karabas-go-core-atari7800
+- Atari Lynx (ядро AtariLynx из MiSTer; картриджи .lnx со своим boot ROM, homebrew BS93, поворот экрана): https://github.com/andykarpov/karabas-go-core-lynx
 - Atari 800XL: https://github.com/xdemax/karabas-go-core-atari800
 - Music Player (MOD / XM / S3M / IT / PT3 / PT2 / STC, MP3 экспериментально; Go и Mini G): https://github.com/xdemax/karabas-go-core-player
 - Amstrad CPC 464 / 664 / 6128: https://github.com/andykarpov/karabas-go-core-cpc
