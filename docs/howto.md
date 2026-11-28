@@ -148,7 +148,7 @@ It registers the same extensions as `FTVIEW.WMF`: copy it into the `WC` folder o
 
 `software/ESPPLAY.WMF` is a Wild Commander plugin that plays MP3, WAV, Ogg Vorbis, FLAC, AAC and M4A,
 play lists (M3U, M3U8, PLS) and internet radio from them on the ESP32-S3 of the Mini G shield,
-version 1.1.0
+version 1.1.1
 ([sources, releases and the manual](https://github.com/andykarpov/espplay-wmf)). It needs the
 ESP firmware of `firmware/esp32-s3/` above. Without it, the plugin says that the ESP has no player.
 
